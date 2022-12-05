@@ -10,7 +10,7 @@
   <meta name="description" content="A notebook, maybe.">
   <!-- 标签页图标 -->
   
-
+  <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
   <!-- 图标库 -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
   <!-- 动画库 -->
@@ -29,7 +29,7 @@
 
     
   
-<meta name="generator" content="Hexo 5.4.2"></head>
+<meta name="generator" content="Hexo 5.4.2"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
 
 
 <body>
@@ -120,171 +120,168 @@
         <!-- top型目录 -->
         
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<pre class="highlight"><code class="bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span>
 </code></pre>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
+<pre class="highlight"><code class="bash">$ hexo server
 </code></pre>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
+<pre class="highlight"><code class="bash">$ hexo generate
 </code></pre>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
+<pre class="highlight"><code class="bash">$ hexo deploy
 </code></pre>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<hr>
+<hr />
 <p>以上是官方教我发博客</p>
 <p>要想写博客还得学学markdown语法</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h1 id="Markdown-笔记"><a href="#Markdown-笔记" class="headerlink" title="Markdown 笔记"></a>Markdown 笔记</h1><p>&nbsp;</p>
-<h2 id="内容划分"><a href="#内容划分" class="headerlink" title="内容划分"></a>内容划分<br/></h2><p>&nbsp;</p>
-<ol>
-<li><p>标题<br/><br> markdown有<strong>六级标题</strong>， <code>#</code> 加一个空格后接标题内容即可。<br/></p>
-<pre><code>    #      一级标题
-    ##     二级标题
-    ###    三级标题
-    ####   四级标题
-    #####  五级标题
-    ###### 六级标题
+<p> </p>
+<p> </p>
+<h1 id="markdown-笔记"><a class="markdownIt-Anchor" href="#markdown-笔记"></a> Markdown 笔记</h1>
+<h2 id="内容划分"><a class="markdownIt-Anchor" href="#内容划分"></a> 内容划分</h2>
+<h3 id="标题"><a class="markdownIt-Anchor" href="#标题"></a> 标题</h3>
+<p>markdown有<strong>六级标题</strong>， <code>#</code> 加一个空格后接标题内容即可。<br/></p>
+<pre class="highlight"><code class="">        #      一级标题
+        ##     二级标题
+        ###    三级标题
+        ####   四级标题
+        #####  五级标题
+        ###### 六级标题
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>列表<br/><br> 无序列表，使用星号 <code>*</code> 、加号 <code>+</code> 或是减号 <code>-</code> ，再加一个空格作为列表标记。有序列表，使用数字并加上 <code>.</code> 号，再加一个空格作为列表标记。<br> 如果要控制列表的层级，则需要在符号 - 前使用 <code>tab</code><br/></p>
-<pre><code>    1. 有序列表
+<h3 id="列表"><a class="markdownIt-Anchor" href="#列表"></a> 列表</h3>
+<p>无序列表，使用星号 <code>*</code> 、加号 <code>+</code> 或是减号 <code>-</code> ，再加一个空格作为列表标记。有序列表，使用数字并加上 <code>.</code> 号，再加一个空格作为列表标记。<br />
+如果要控制列表的层级，则需要在符号 - 前使用 <code>tab</code><br/></p>
+<pre class="highlight"><code class="">    1. 有序列表
     2. 有序列表
     - 无序列表 1
     * 无序列表 2
         + 无序列表 2.1
         + 无序列表 2.2
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>引用<br/><br> Markdown的引用格式是在符号 &gt; 后面书写文字，或者加一个空格再加文字。</p>
+<h3 id="引用"><a class="markdownIt-Anchor" href="#引用"></a> 引用</h3>
+<p>Markdown的引用格式是在符号 &gt; 后面书写文字，或者加一个空格再加文字。</p>
 <blockquote>
-<p>这是一个引用<br/><br>书写格式是<br/><br><code>&gt; 引用内容</code><br/><br>而且还可以通过增加 <code>&gt;</code> 多重嵌套<br/></p>
+<p>这是一个引用<br/><br />
+书写格式是<br/><br />
+<code>&gt; 引用内容</code><br/><br />
+而且还可以通过增加 <code>&gt;</code> 多重嵌套<br/></p>
 <blockquote>
-<p>这样写<br/><br><code>&gt;&gt; 引用内容</code><br/></p>
+<p>这样写<br/><br />
+<code>&gt;&gt; 引用内容</code><br/></p>
 <blockquote>
-<p>还可以套娃<br/><br><code>&gt;&gt;&gt; 引用内容</code><br/></p>
+<p>还可以套娃<br/><br />
+<code>&gt;&gt;&gt; 引用内容</code><br/></p>
 </blockquote>
 </blockquote>
 </blockquote>
-</li>
-</ol>
-<p>&nbsp;</p>
-<ol start="4">
-<li><p>分割线<br/><br> Markdown分割线，可以在一行中用三个 <code>-</code> 或者 <code>*</code> 来建立一个分隔线，同时需要在分隔线的上面空一行，不留空格，就会变成放大第一行字。</p>
-<pre><code>    内容
+<h3 id="分割线"><a class="markdownIt-Anchor" href="#分割线"></a> 分割线</h3>
+<p>Markdown分割线，可以在一行中用三个 <code>-</code> 或者 <code>*</code> 来建立一个分隔线，同时需要在分隔线的上面空一行，不留空格，就会变成放大第一行字。</p>
+<pre class="highlight"><code class="">    内容
 
     ---或***
     内容
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>空行<br/><br> 使用 <code>&amp;nbsp;</code> 占位需要空的那行，或者在行末用 <code>&lt;br/&gt;</code> 换行。</p>
-</li>
-</ol>
-<p>&nbsp;</p>
-<ol start="6">
-<li>TOC<br/><br> 全称为 Table of Content，列出全部标题（小目录）<br/><pre><code>[toc] 或者 @[toc]
-# 一级标题
-## 二级标题
+<h3 id="空行"><a class="markdownIt-Anchor" href="#空行"></a> 空行</h3>
+<p>使用 <code>&amp;nbsp;</code> 占位需要空的那行，或者在行末用 <code>&lt;br/&gt;</code> 换行。</p>
+<h3 id="toc"><a class="markdownIt-Anchor" href="#toc"></a> TOC</h3>
+<p>全称为 Table of Content，列出全部标题（小目录）<br/></p>
+<pre class="highlight"><code class="">    [toc] 或者 @[toc]
+    # 一级标题
+    ## 二级标题
 </code></pre>
-</li>
-</ol>
-<p>&nbsp;</p>
-<h2 id="文本内容"><a href="#文本内容" class="headerlink" title="文本内容"></a>文本内容<br/></h2><p>&nbsp;</p>
-<ol>
-<li><p>字体<br/><br> <em>斜体文本</em>：可以在需要标注为斜体文本前及斜 体文本结尾，输入一个星号 <code>*</code> 或者一个下划线 <code>_</code>。<br/><br> <strong>粗体文本</strong>：可以在需要标注为粗体文本前及粗体文本结尾，输入两个星号 <code>**</code> 或者两个下划线 <code>__</code>。<br/><br> <em><strong>粗斜体文本</strong></em>：可以在需要标注为粗斜体文本前及粗斜体文本结尾，输入三个星号 <code>***</code> 或者三个下划线 <code>___</code>。<br/></p>
-<pre><code>    *斜体文本*
+<h2 id="文本内容"><a class="markdownIt-Anchor" href="#文本内容"></a> 文本内容</h2>
+<h3 id="字体"><a class="markdownIt-Anchor" href="#字体"></a> 字体</h3>
+<p><em>斜体文本</em>：可以在需要标注为斜体文本前及斜 体文本结尾，输入一个星号 <code>*</code> 或者一个下划线 <code>_</code>。<br />
+<strong>粗体文本</strong>：可以在需要标注为粗体文本前及粗体文本结尾，输入两个星号 <code>**</code> 或者两个下划线 <code>__</code>。<br />
+<em><strong>粗斜体文本</strong></em>：可以在需要标注为粗斜体文本前及粗斜体文本结尾，输入三个星号 <code>***</code> 或者三个下划线 <code>___</code>。<br/></p>
+<pre class="highlight"><code class="">    *斜体文本*
     **粗体文本**
     ***粗斜体文本***
 </code></pre>
-<p> 支持原生 HTML 语法内联样式：<br/><br> <span style="display:block;text-align:center;color:orangered;">橙色居中</span></p>
-<pre><code>&lt;span style=&quot;display:block;text-align:center;color:orangered;&quot;&gt;橙色居中&lt;/span&gt;
+<p>支持原生 HTML 语法内联样式：<br/><br />
+<span style="display:block;text-align:center;color:orangered;">橙色居中</span></p>
+<pre class="highlight"><code class="">    &lt;span style=&quot;display:block;text-align:center;color:orangered;&quot;&gt;橙色居中&lt;/span&gt;
 </code></pre>
-<p> 也可以用 HTML 语法改变字色，字体和字号：<br/><br> <font color=#0099ff size=7 face="STCAIYUN">Radioactive</font></p>
-<pre><code> &lt;font color=#0099ff size=7 face=&quot;STCAIYUN&quot;&gt;Radioactive&lt;/font&gt;
+<p>也可以用 HTML 语法改变字色，字体和字号：<br/><br />
+<font color=#0099ff size=7 face="STCAIYUN">Radioactive</font></p>
+<pre class="highlight"><code class="">     &lt;font color=#0099ff size=7 face=&quot;STCAIYUN&quot;&gt;Radioactive&lt;/font&gt;
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>划线<br/><br> Markdown的<u>下划线</u>是在文字首部和尾部加上 <code>&lt;u&gt;</code> 与 <code>&lt;/u&gt;</code> ，<br> 在<del>需要删除的文字</del>前后各使用两个 <code>~</code>，格式如下：<br/></p>
-<pre><code>    &lt;u&gt;这行文字将被添加下划线&lt;/u&gt;
+<h3 id="划线"><a class="markdownIt-Anchor" href="#划线"></a> 划线</h3>
+<p>Markdown的<u>下划线</u>是在文字首部和尾部加上 <code>&lt;u&gt;</code> 与 <code>&lt;/u&gt;</code> ，<br />
+在<s>需要删除的文字</s>前后各使用两个 <code>~</code>，格式如下：<br/></p>
+<pre class="highlight"><code class="">    &lt;u&gt;这行文字将被添加下划线&lt;/u&gt;
     ~~这是要被删除的内容~~
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>链接<br/><br> 超链接的格式如下：<br/></p>
-<pre><code>    [链接名称](链接地址)
+<h3 id="链接"><a class="markdownIt-Anchor" href="#链接"></a> 链接</h3>
+<p>超链接的格式如下：<br/></p>
+<pre class="highlight"><code class="">    [链接名称](链接地址)
     或者直接贴网址
     &lt;链接地址&gt;
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>表格<br/><br> 使用 <code>|</code> 来分隔不同的单元格，使用 <code>-</code> 来分隔表头和其他行，左对齐 <code>:-</code> 、右对齐 <code>-:</code> 、居中对齐 <code>:-:</code> 。<br/></p>
+<h3 id="表格"><a class="markdownIt-Anchor" href="#表格"></a> 表格</h3>
+<p>使用 <code>|</code> 来分隔不同的单元格，使用 <code>-</code> 来分隔表头和其他行，左对齐 <code>:-</code> 、右对齐 <code>-:</code> 、居中对齐 <code>:-:</code> 。<br/></p>
 <table>
 <thead>
 <tr>
-<th align="left">姓名</th>
-<th align="center">年龄</th>
-<th align="right">工作</th>
+<th style="text-align:left">姓名</th>
+<th style="text-align:center">年龄</th>
+<th style="text-align:right">工作</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">李华</td>
-<td align="center">19</td>
-<td align="right">学生</td>
+<tbody>
+<tr>
+<td style="text-align:left">李华</td>
+<td style="text-align:center">19</td>
+<td style="text-align:right">学生</td>
 </tr>
 <tr>
-<td align="left">左对齐</td>
-<td align="center">居中</td>
-<td align="right">右对齐</td>
+<td style="text-align:left">左对齐</td>
+<td style="text-align:center">居中</td>
+<td style="text-align:right">右对齐</td>
 </tr>
-</tbody></table>
-<pre><code>    | 姓名 | 年龄  | 工作 |
+</tbody>
+</table>
+<pre class="highlight"><code class="">    | 姓名 | 年龄  | 工作 |
     | :--- | :---: | ---: |
     | 李华 |  19   | 学生 |
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>图片<br/><br> 插入图片格式为 <code>[图片描述](图片地址)</code> ，支持 jpg、png、gif、svg 等图片格式，但仅支持 https 的图片，图片粘贴到网页编辑器后，会自动上传到服务器；如果是本地编辑器，需要有一个相对路径用来存储保存的图片。</p>
-</li>
-</ol>
-<p>&nbsp;</p>
-<ol start="6">
-<li><p>脚注<br/><br> 脚注是对文本的<a href="%E8%84%9A%E6%B3%A8%E8%A7%A3%E9%87%8A" title="脚注名称">备注说明</a><br/></p>
-<pre><code>    [文字](这里写解释 &quot;这里写名称&quot;)
+<h3 id="图片"><a class="markdownIt-Anchor" href="#图片"></a> 图片</h3>
+<p>插入图片格式为 <code>[图片描述](图片地址)</code> ，支持 jpg、png、gif、svg 等图片格式，但仅支持 https 的图片，图片粘贴到网页编辑器后，会自动上传到服务器；如果是本地编辑器，需要有一个相对路径用来存储保存的图片。</p>
+<h3 id="脚注"><a class="markdownIt-Anchor" href="#脚注"></a> 脚注</h3>
+<p>脚注是对文本的<a href="%E8%84%9A%E6%B3%A8%E8%A7%A3%E9%87%8A" title="脚注名称">备注说明</a><br/></p>
+<pre class="highlight"><code class="">    [文字](这里写解释 &quot;这里写名称&quot;)
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>代码块<br/><br> 在一个行内需要引用代码，只要用反引号引起来就好，如果是在一个块内需要引用代码，则在需要高亮的代码块的前一行及后一行使用三个反引号。同时，第一行反引号后面表示代码块所使用的语言。<br/></p>
-<pre><code>    行内的代码 `print()`
+<h3 id="代码块"><a class="markdownIt-Anchor" href="#代码块"></a> 代码块</h3>
+<p>在一个行内需要引用代码，只要用反引号引起来就好，如果是在一个块内需要引用代码，则在需要高亮的代码块的前一行及后一行使用三个反引号。同时，第一行反引号后面表示代码块所使用的语言。<br/></p>
+<pre class="highlight"><code class="">    行内的代码 `print()`
 
     代码块
     ```语言
     代码内容
     ```
 </code></pre>
-<pre><code class="cpp">    // FileName: HelloWorld.cpp
-    #include &lt;iostream&gt;
-    int main()
-    &#123;
-        printf(&quot;Hello World&quot;);
+<pre class="highlight"><code class="cpp">    <span class="hljs-comment">// FileName: HelloWorld.cpp</span>
+    <span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span>
+    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+    </span>&#123;
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello World&quot;</span>);
     &#125;
 </code></pre>
-<p> 支持以下语言种类：<br/><br> bash，c，clojure，cpp，cs，css，dart，dockerfile, diff，erlang，go，gradle，groovy，haskell，java，javascript，json，julia，kotlin，lisp，lua，makefile，markdown，matlab，objectivec，perl，php，python，r，ruby，rust，scala，shell，sql，swift，tex，typescript，verilog，vhdl，xml，yaml 等。</p>
-</li>
-</ol>
-<p>&nbsp;</p>
-<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式<br/></h2><p>&nbsp;</p>
-<ol>
-<li><p>行内公式使用方法如下：<br> $\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}$<br/></p>
-<pre><code>$\ce&#123;Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^&#123;II&#125;I4]^2-&#125;$
+<p>支持以下语言种类：<br />
+bash，c，clojure，cpp，cs，css，dart，dockerfile, diff，erlang，go，gradle，groovy，haskell，java，javascript，json，julia，kotlin，lisp，lua，makefile，markdown，matlab，objectivec，perl，php，python，r，ruby，rust，scala，shell，sql，swift，tex，typescript，verilog，vhdl，xml，yaml 等。</p>
+<h2 id="数学公式"><a class="markdownIt-Anchor" href="#数学公式"></a> 数学公式</h2>
+<h3 id="行内公式"><a class="markdownIt-Anchor" href="#行内公式"></a> 行内公式</h3>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></msubsup><mroot><mrow><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup></mrow><mrow><mn>3</mn></mrow></mroot></mrow><annotation encoding="application/x-tex">\sum_{i=0}^{n} \sqrt[3]{x_i^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.9445270000000001em;"></span><span class="strut bottom" style="height:1.2445370000000002em;vertical-align:-0.30001em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">∑</span><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathrm">0</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sqrt mord"><span class="root"><span class="vlist"><span style="top:-0.3894264000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptscriptstyle uncramped"><span class="mord scriptscriptstyle uncramped"><span class="mord mathrm">3</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sqrt-sign" style="top:-0.0545270000000001em;"><span class="style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing size1">√</span></span></span><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.27686399999999994em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span style="top:-0.34480000000000005em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span style="top:-0.864527em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle uncramped sqrt-line"></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span>​</span></span></span></span></span></span></p>
+<pre class="highlight"><code class="">$\sum_&#123;i=0&#125;^&#123;n&#125; \sqrt[3]&#123;x_i^2&#125;$
 
     其中：
-    上标    Hg^&#123;2&#125;
-    下标    I_&#123;4&#125;
+    上标    x^&#123;2&#125;
+    下标    x_&#123;i&#125;
 
     开方    \sqrt[根指数]&#123;被开方数&#125;
 
@@ -292,10 +289,10 @@
     \langle 尖括号 \rangle
     \&#123;      花括号 \&#125;
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>块公式使用方法，如下：<br> $$<br> H(D_2) = -\left(\frac{2}{4} \log_2 \frac{2}{4} + \frac{2}{4} \log_2 \frac{2}{4}\right) = 1<br> $$</p>
-<pre><code>$$
+<h3 id="块公式"><a class="markdownIt-Anchor" href="#块公式"></a> 块公式</h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>H</mi><mo>(</mo><msub><mi>D</mi><mn>2</mn></msub><mo>)</mo><mo>=</mo><mo>−</mo><mrow><mo fence="true">(</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>4</mn></mrow></mfrac><msub><mi>log</mi><mn>2</mn></msub><mfrac><mrow><mn>2</mn></mrow><mrow><mn>4</mn></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>4</mn></mrow></mfrac><msub><mi>log</mi><mn>2</mn></msub><mfrac><mrow><mn>2</mn></mrow><mrow><mn>4</mn></mrow></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">H(D_2) = -\left(\frac{2}{4} \log_2 \frac{2}{4} + \frac{2}{4} \log_2 \frac{2}{4}\right) = 1
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.45em;"></span><span class="strut bottom" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.02778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose">)</span><span class="mrel">=</span><span class="mord">−</span><span class="minner displaystyle textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">4</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm">2</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="vlist"><span style="top:0.24444em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">4</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm">2</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mbin">+</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">4</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm">2</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="vlist"><span style="top:0.24444em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">4</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm">2</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span></span></p>
+<pre class="highlight"><code class="">$$
 H(D_2) = -\left(\frac&#123;2&#125;&#123;4&#125; \log_2 \frac&#123;2&#125;&#123;4&#125; + \frac&#123;2&#125;&#123;4&#125; \log_2 \frac&#123;2&#125;&#123;4&#125;\right) = 1
 $$
 
@@ -303,21 +300,26 @@ $$
     分数常用     \frac&#123;分子&#125;&#123;分母&#125;
     复杂分式     分子 \over 分母
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>部分公式<br/></p>
-<p> 积分式：$\int_{0}^{1} {x^{3}}dx$</p>
-<pre><code>    \int_&#123;积分上限&#125;^&#123;积分上限&#125; &#123;被积表达式&#125;
+<h3 id="部分公式"><a class="markdownIt-Anchor" href="#部分公式"></a> 部分公式</h3>
+<p>积分式：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∫</mo><mrow><mn>0</mn></mrow><mrow><mn>1</mn></mrow></msubsup><mrow><msup><mi>x</mi><mrow><mn>3</mn></mrow></msup></mrow><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{1} {x^{3}}dx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.870108em;"></span><span class="strut bottom" style="height:1.2262279999999999em;vertical-align:-0.35612em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∫</span><span class="vlist"><span style="top:0.35612em;margin-left:-0.19445em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathrm">0</span></span></span></span><span style="top:-0.41900000000000004em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">3</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord mathit">d</span><span class="mord mathit">x</span></span></span></span></p>
+<pre class="highlight"><code class="">    \int_&#123;积分上限&#125;^&#123;积分上限&#125; &#123;被积表达式&#125;
 </code></pre>
-<p> 极限运算： $\lim_{x \to \infty} \frac{1}{n(n+1)}$</p>
-<pre><code>    \lim&#123;变量 \to 表达式&#125; 表达式
+<p>极限运算： <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>lim</mi><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mrow><mn>1</mn></mrow><mrow><mi>n</mi><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim_{x \to \infty} \frac{1}{n(n+1)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.845108em;"></span><span class="strut bottom" style="height:1.365108em;vertical-align:-0.52em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="mop">lim</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">x</span><span class="mrel">→</span><span class="mord mathrm">∞</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord reset-textstyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.34500000000000003em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">n</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathrm">1</span><span class="mclose">)</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></p>
+<pre class="highlight"><code class="">    \lim&#123;变量 \to 表达式&#125; 表达式
 </code></pre>
-<p> 累加和累乘：$\sum_{i=0}^{n} x_i$和$\prod_{j=0}^{\infty} y_j$</p>
-<pre><code>     \sum_&#123;下标表达式&#125;^&#123;上标表达式&#125; &#123;累加表达式&#125;
+<p>累加和累乘：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></msubsup><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\sum_{i=0}^{n} x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.0500099999999999em;vertical-align:-0.30001em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">∑</span><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathrm">0</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∏</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi mathvariant="normal">∞</mi></mrow></msubsup><msub><mi>y</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">\prod_{j=0}^{\infty} y_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.186118em;vertical-align:-0.436118em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">∏</span><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mrel">=</span><span class="mord mathrm">0</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">∞</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit" style="margin-right:0.05724em;">j</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></p>
+<pre class="highlight"><code class="">        \sum_&#123;下标表达式&#125;^&#123;上标表达式&#125; &#123;累加表达式&#125;
     \prod_&#123;下标表达式&#125;^&#123;上标表达式&#125; &#123;累加表达式&#125;
 </code></pre>
-<p> 矩阵使用方法，如下：<br> $$<br> \begin{pmatrix}<br> 1       &amp; a_1    &amp; a_1^2  &amp; \cdots &amp; a_1^n  \<br> 1       &amp; a_2    &amp; a_2^2  &amp; \cdots &amp; a_2^n  \<br> \vdots  &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br> 1       &amp; a_m    &amp; a_m^2  &amp; \cdots &amp; a_m^n  \<br> \end{pmatrix}<br> $$</p>
-<pre><code>$$
+<p>矩阵使用方法，如下：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mo fence="true">(</mo><mtable><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow></mtd><mtd><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup></mrow></mtd><mtd><mrow><mo>⋯</mo></mrow></mtd><mtd><mrow><msubsup><mi>a</mi><mn>1</mn><mi>n</mi></msubsup></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><msub><mi>a</mi><mn>2</mn></msub></mrow></mtd><mtd><mrow><msubsup><mi>a</mi><mn>2</mn><mn>2</mn></msubsup></mrow></mtd><mtd><mrow><mo>⋯</mo></mrow></mtd><mtd><mrow><msubsup><mi>a</mi><mn>2</mn><mi>n</mi></msubsup></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">⋮</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">⋮</mi></mrow></mtd><mtd><mrow><mi mathvariant="normal">⋮</mi></mrow></mtd><mtd><mrow><mo>⋱</mo></mrow></mtd><mtd><mrow><mi mathvariant="normal">⋮</mi></mrow></mtd></mtr><mtr><mtd><mrow><mn>1</mn></mrow></mtd><mtd><mrow><msub><mi>a</mi><mi>m</mi></msub></mrow></mtd><mtd><mrow><msubsup><mi>a</mi><mi>m</mi><mn>2</mn></msubsup></mrow></mtd><mtd><mrow><mo>⋯</mo></mrow></mtd><mtd><mrow><msubsup><mi>a</mi><mi>m</mi><mi>n</mi></msubsup></mrow></mtd></mtr><mtr><mtd><mrow></mrow></mtd></mtr></mtable><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\begin{pmatrix}
+1       &amp; a_1    &amp; a_1^2  &amp; \cdots &amp; a_1^n  \\
+1       &amp; a_2    &amp; a_2^2  &amp; \cdots &amp; a_2^n  \\
+\vdots  &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+1       &amp; a_m    &amp; a_m^2  &amp; \cdots &amp; a_m^n  \\
+\end{pmatrix}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:3.3161620000000003em;"></span><span class="strut bottom" style="height:6.1323240000000006em;vertical-align:-2.8161620000000003em;"></span><span class="base displaystyle textstyle uncramped"><span class="minner displaystyle textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing mult"><span class="vlist"><span style="top:2.1050199999999997em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎝</span></span></span><span style="top:0.9500099999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:0.3499999999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:-0.25001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:-0.8500199999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎜</span></span></span><span style="top:-2.09504em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎛</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist"><span style="top:-2.4520540000000004em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">1</span></span></span><span style="top:-1.227946em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">1</span></span></span><span style="top:0.03205399999999986em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">⋮</span></span></span><span style="top:1.2561619999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">1</span></span></span><span style="top:2.4561620000000004em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist"><span style="top:-2.4520540000000004em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span style="top:-1.227946em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span style="top:0.03205399999999986em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">⋮</span></span></span><span style="top:1.2561619999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">m</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist"><span style="top:-2.4520540000000004em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.247em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span style="top:-0.4129999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span style="top:-1.227946em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.247em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span style="top:-0.4129999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span style="top:0.03205399999999986em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">⋮</span></span></span><span style="top:1.2561619999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.247em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">m</span></span></span><span style="top:-0.4129999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist"><span style="top:-2.4520540000000004em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="minner">⋯</span></span></span><span style="top:-1.227946em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="minner">⋯</span></span></span><span style="top:0.03205399999999986em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="minner">⋱</span></span></span><span style="top:1.2561619999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="minner">⋯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist"><span style="top:-2.4520540000000004em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.247em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span style="top:-0.4129999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span style="top:-1.227946em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.247em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span style="top:-0.4129999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span style="top:0.03205399999999986em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">⋮</span></span></span><span style="top:1.2561619999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.247em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">m</span></span></span><span style="top:-0.4129999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span class="style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing mult"><span class="vlist"><span style="top:2.1050199999999997em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎠</span></span></span><span style="top:0.9500099999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:0.3499999999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:-0.25001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:-0.8500199999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎟</span></span></span><span style="top:-2.09504em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎞</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></span></span></p>
+<pre class="highlight"><code class="">$$
 \begin&#123;pmatrix&#125;
 1       &amp; a_1    &amp; a_1^2  &amp; \cdots &amp; a_1^n  \\
 1       &amp; a_2    &amp; a_2^2  &amp; \cdots &amp; a_2^n  \\
@@ -349,515 +351,486 @@ $$
                     \end&#123;matrix&#125;
                     \right]
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>公式批注<br/><br> $$<br> f(x)= \begin{cases} 0,&amp; \text{if x is even} \<br> 1, &amp; \text{if x is odd} \tag{公式1}\end{cases}<br> $$<br> 使用 <code>\text&#123;内容&#125;</code> 添加注释，<br/><br> 使用 <code>\tag&#123;公式1&#125;</code> 添加标签。</p>
-</li>
-</ol>
-<p>&nbsp;</p>
-<ol start="5">
-<li><p>字体加粗<br/><br> 数字：$\mathbf{0123456789}$<br/><br> 字母：$\pmb{\alpha\beta\gamma\delta\epsilon\zeta}$<br> 斜粗：$\boldsymbol{\alpha\beta\gamma\delta\epsilon\zeta}$</p>
-<pre><code>    \mathbf     &#123;数字&#125;
+<h3 id="公式批注"><a class="markdownIt-Anchor" href="#公式批注"></a> 公式批注</h3>
+f(x)= \begin{cases} 0,& \text{if x is even} \\
+1, & \text{if x is odd} \tag{公式1}\end{cases}
+
+<p>使用 <code>\text&#123;内容&#125;</code> 添加注释，<br/><br />
+使用 <code>\tag&#123;公式1&#125;</code> 添加标签。</p>
+<h3 id="字体加粗"><a class="markdownIt-Anchor" href="#字体加粗"></a> 字体加粗</h3>
+<p>数字：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mn mathvariant="bold">0</mn><mn mathvariant="bold">1</mn><mn mathvariant="bold">2</mn><mn mathvariant="bold">3</mn><mn mathvariant="bold">4</mn><mn mathvariant="bold">5</mn><mn mathvariant="bold">6</mn><mn mathvariant="bold">7</mn><mn mathvariant="bold">8</mn><mn mathvariant="bold">9</mn></mrow></mrow><annotation encoding="application/x-tex">\mathbf{0123456789}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathbf">0</span><span class="mord mathbf">1</span><span class="mord mathbf">2</span><span class="mord mathbf">3</span><span class="mord mathbf">4</span><span class="mord mathbf">5</span><span class="mord mathbf">6</span><span class="mord mathbf">7</span><span class="mord mathbf">8</span><span class="mord mathbf">9</span></span></span></span></span><br/><br />
+字母：\pmb{\alpha\beta\gamma\delta\epsilon\zeta}<br />
+斜粗：\boldsymbol{\alpha\beta\gamma\delta\epsilon\zeta}</p>
+<pre class="highlight"><code class="">    \mathbf     &#123;数字&#125;
     \pmb        &#123;字母&#125;
     \boldsymbol &#123;字母&#125;
 </code></pre>
-<p>&nbsp;</p>
-</li>
-<li><p>字母符号表<br/></p>
+<h3 id="字母符号表"><a class="markdownIt-Anchor" href="#字母符号表"></a> 字母符号表</h3>
 <table>
 <thead>
 <tr>
-<th align="center">显示(小写)</th>
+<th style="text-align:center">显示(小写)</th>
 <th>代码(小写)</th>
-<th align="center">显示(大写)</th>
+<th style="text-align:center">显示(大写)</th>
 <th>代码(大写)</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">α</td>
+<tbody>
+<tr>
+<td style="text-align:center">α</td>
 <td>\alpha</td>
-<td align="center">A</td>
+<td style="text-align:center">A</td>
 <td>\A</td>
 </tr>
 <tr>
-<td align="center">β</td>
+<td style="text-align:center">β</td>
 <td>\beta</td>
-<td align="center">B</td>
+<td style="text-align:center">B</td>
 <td>\B</td>
 </tr>
 <tr>
-<td align="center">γ</td>
+<td style="text-align:center">γ</td>
 <td>\gamma</td>
-<td align="center">Γ</td>
+<td style="text-align:center">Γ</td>
 <td>\Gamma</td>
 </tr>
 <tr>
-<td align="center">δ</td>
+<td style="text-align:center">δ</td>
 <td>\delta</td>
-<td align="center">Δ</td>
+<td style="text-align:center">Δ</td>
 <td>\Delta</td>
 </tr>
 <tr>
-<td align="center">ϵ</td>
+<td style="text-align:center">ϵ</td>
 <td>\epsilon</td>
-<td align="center">E</td>
+<td style="text-align:center">E</td>
 <td>\Epsilon</td>
 </tr>
 <tr>
-<td align="center">ζ</td>
+<td style="text-align:center">ζ</td>
 <td>\zeta</td>
-<td align="center">Z</td>
+<td style="text-align:center">Z</td>
 <td>\Zeta</td>
 </tr>
 <tr>
-<td align="center">η</td>
+<td style="text-align:center">η</td>
 <td>\eta</td>
-<td align="center">H</td>
+<td style="text-align:center">H</td>
 <td>\Eta</td>
 </tr>
 <tr>
-<td align="center">θ</td>
+<td style="text-align:center">θ</td>
 <td>\theta</td>
-<td align="center">Θ</td>
+<td style="text-align:center">Θ</td>
 <td>\Theta</td>
 </tr>
 <tr>
-<td align="center">ι</td>
+<td style="text-align:center">ι</td>
 <td>\iota</td>
-<td align="center">I</td>
+<td style="text-align:center">I</td>
 <td>\Iota</td>
 </tr>
 <tr>
-<td align="center">κ</td>
+<td style="text-align:center">κ</td>
 <td>\kappa</td>
-<td align="center">K</td>
+<td style="text-align:center">K</td>
 <td>\Kappa</td>
 </tr>
 <tr>
-<td align="center">λ</td>
+<td style="text-align:center">λ</td>
 <td>\lambda</td>
-<td align="center">Λ</td>
+<td style="text-align:center">Λ</td>
 <td>\Lambda</td>
 </tr>
 <tr>
-<td align="center">μ</td>
+<td style="text-align:center">μ</td>
 <td>\mu</td>
-<td align="center">M</td>
+<td style="text-align:center">M</td>
 <td>\Mu</td>
 </tr>
 <tr>
-<td align="center">ν</td>
+<td style="text-align:center">ν</td>
 <td>\nu</td>
-<td align="center">N</td>
+<td style="text-align:center">N</td>
 <td>\Nu</td>
 </tr>
 <tr>
-<td align="center">ξ</td>
+<td style="text-align:center">ξ</td>
 <td>\xi</td>
-<td align="center">Ξ</td>
+<td style="text-align:center">Ξ</td>
 <td>\Xi</td>
 </tr>
 <tr>
-<td align="center">o</td>
+<td style="text-align:center">o</td>
 <td>\o</td>
-<td align="center">O</td>
+<td style="text-align:center">O</td>
 <td>\O</td>
 </tr>
 <tr>
-<td align="center">π</td>
+<td style="text-align:center">π</td>
 <td>\pi</td>
-<td align="center">Π</td>
+<td style="text-align:center">Π</td>
 <td>\Pi</td>
 </tr>
 <tr>
-<td align="center">ρ</td>
+<td style="text-align:center">ρ</td>
 <td>\rho</td>
-<td align="center">P</td>
+<td style="text-align:center">P</td>
 <td>\Rho</td>
 </tr>
 <tr>
-<td align="center">σ</td>
+<td style="text-align:center">σ</td>
 <td>\sigma</td>
-<td align="center">Σ</td>
+<td style="text-align:center">Σ</td>
 <td>\Sigma</td>
 </tr>
 <tr>
-<td align="center">τ</td>
+<td style="text-align:center">τ</td>
 <td>\tau</td>
-<td align="center">T</td>
+<td style="text-align:center">T</td>
 <td>\Tau</td>
 </tr>
 <tr>
-<td align="center">υ</td>
+<td style="text-align:center">υ</td>
 <td>\upsilon</td>
-<td align="center">Υ</td>
+<td style="text-align:center">Υ</td>
 <td>\Upsilon</td>
 </tr>
 <tr>
-<td align="center">ϕ</td>
+<td style="text-align:center">ϕ</td>
 <td>\phi</td>
-<td align="center">Φ</td>
+<td style="text-align:center">Φ</td>
 <td>\Phi</td>
 </tr>
 <tr>
-<td align="center">χ</td>
+<td style="text-align:center">χ</td>
 <td>\chi</td>
-<td align="center">X</td>
+<td style="text-align:center">X</td>
 <td>\Chi</td>
 </tr>
 <tr>
-<td align="center">ψ</td>
+<td style="text-align:center">ψ</td>
 <td>\psi</td>
-<td align="center">Ψ</td>
+<td style="text-align:center">Ψ</td>
 <td>\Psi</td>
 </tr>
 <tr>
-<td align="center">ω</td>
+<td style="text-align:center">ω</td>
 <td>\omega</td>
-<td align="center">Ω</td>
+<td style="text-align:center">Ω</td>
 <td>\Omega</td>
 </tr>
-<tr>
-<td align="center">&nbsp;</td>
-<td></td>
-<td align="center"></td>
-<td></td>
-</tr>
-</tbody></table>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
-<th align="center">显示</th>
-<th align="left">代码</th>
-<th align="center">显示</th>
-<th align="left">代码</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:left">代码</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:left">代码</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">$\vec{x}$</td>
-<td align="left">\vec{x}</td>
-<td align="center">$\hat{xy}$</td>
-<td align="left">\hat{xy}</td>
+<tbody>
+<tr>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>x</mi></mrow><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.71444em;"></span><span class="strut bottom" style="height:0.71444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit">x</span></span></span><span style="top:0em;margin-left:0.05556em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body accent-vec"><span>⃗</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></td>
+<td style="text-align:left">\vec{x}</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>x</mi><mi>y</mi></mrow><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{xy}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit">x</span><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span><span style="top:0em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>^</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></td>
+<td style="text-align:left">\hat{xy}</td>
 </tr>
 <tr>
-<td align="center">$\overleftarrow{x}$</td>
-<td align="left">\overleftarrow{x}</td>
-<td align="center">$\widehat{xyz}$</td>
-<td align="left">\widehat{xyz}</td>
+<td style="text-align:center">\overleftarrow{x}</td>
+<td style="text-align:left">\overleftarrow{x}</td>
+<td style="text-align:center">\widehat{xyz}</td>
+<td style="text-align:left">\widehat{xyz}</td>
 </tr>
 <tr>
-<td align="center">$\overrightarrow{x}$</td>
-<td align="left">\overrightarrow{x}</td>
-<td align="center">$\bar{y}$</td>
-<td align="left">\bar{y}</td>
+<td style="text-align:center">\overrightarrow{x}</td>
+<td style="text-align:left">\overrightarrow{x}</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>y</mi></mrow><mo>¯</mo></mover></mrow><annotation encoding="application/x-tex">\bar{y}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.56778em;"></span><span class="strut bottom" style="height:0.7622199999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span><span style="top:0em;margin-left:0.11112em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></td>
+<td style="text-align:left">\bar{y}</td>
 </tr>
 <tr>
-<td align="center">$\leftarrow$</td>
-<td align="left">\leftarrow</td>
-<td align="center">$\tilde{xy}$</td>
-<td align="left">\tilde{xy}</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>←</mo></mrow><annotation encoding="application/x-tex">\leftarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.36687em;"></span><span class="strut bottom" style="height:0.36687em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel">←</span></span></span></span></td>
+<td style="text-align:left">\leftarrow</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>x</mi><mi>y</mi></mrow><mo>~</mo></mover></mrow><annotation encoding="application/x-tex">\tilde{xy}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.6678599999999999em;"></span><span class="strut bottom" style="height:0.8622999999999998em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit">x</span><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span><span style="top:-0.35em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>~</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></td>
+<td style="text-align:left">\tilde{xy}</td>
 </tr>
 <tr>
-<td align="center">$\rightarrow$</td>
-<td align="left">\rightarrow</td>
-<td align="center">$\widetilde{xyz}$</td>
-<td align="left">\widetilde{xyz}</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.36687em;"></span><span class="strut bottom" style="height:0.36687em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel">→</span></span></span></span></td>
+<td style="text-align:left">\rightarrow</td>
+<td style="text-align:center">\widetilde{xyz}</td>
+<td style="text-align:left">\widetilde{xyz}</td>
 </tr>
 <tr>
-<td align="center">$\uparrow$</td>
-<td align="left">\uparrow</td>
-<td align="center">$\acute{y}$</td>
-<td align="left">\acute{y}</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↑</mo></mrow><annotation encoding="application/x-tex">\uparrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mrel">↑</span></span></span></span></td>
+<td style="text-align:left">\uparrow</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>y</mi></mrow><mo>´</mo></mover></mrow><annotation encoding="application/x-tex">\acute{y}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span><span style="top:0em;margin-left:0.11112em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>´</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></td>
+<td style="text-align:left">\acute{y}</td>
 </tr>
 <tr>
-<td align="center">$\downarrow$</td>
-<td align="left">\downarrow</td>
-<td align="center">$\breve{y}$</td>
-<td align="left">\breve{y}</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↓</mo></mrow><annotation encoding="application/x-tex">\downarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mrel">↓</span></span></span></span></td>
+<td style="text-align:left">\downarrow</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>y</mi></mrow><mo>˘</mo></mover></mrow><annotation encoding="application/x-tex">\breve{y}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span><span style="top:0em;margin-left:0.11112em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>˘</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></td>
+<td style="text-align:left">\breve{y}</td>
 </tr>
 <tr>
-<td align="center">$\Leftarrow$</td>
-<td align="left">\Leftarrow</td>
-<td align="center">$\check{y}$</td>
-<td align="left">\check{y}</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⇐</mo></mrow><annotation encoding="application/x-tex">\Leftarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.36687em;"></span><span class="strut bottom" style="height:0.36687em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel">⇐</span></span></span></span></td>
+<td style="text-align:left">\Leftarrow</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>y</mi></mrow><mo>ˇ</mo></mover></mrow><annotation encoding="application/x-tex">\check{y}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.62847em;"></span><span class="strut bottom" style="height:0.82291em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span><span style="top:0em;margin-left:0.11112em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>ˇ</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></td>
+<td style="text-align:left">\check{y}</td>
 </tr>
 <tr>
-<td align="center">$\Rightarrow$</td>
-<td align="left">\Rightarrow</td>
-<td align="center">$\grave{y}$</td>
-<td align="left">\grave{y}</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⇒</mo></mrow><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.36687em;"></span><span class="strut bottom" style="height:0.36687em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel">⇒</span></span></span></span></td>
+<td style="text-align:left">\Rightarrow</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>y</mi></mrow><mo>`</mo></mover></mrow><annotation encoding="application/x-tex">\grave{y}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span><span style="top:0em;margin-left:0.11112em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>`</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></td>
+<td style="text-align:left">\grave{y}</td>
 </tr>
 <tr>
-<td align="center">$\Uparrow$</td>
-<td align="left">\Uparrow</td>
-<td align="center">$\dot{x}$</td>
-<td align="left">\dot{x}</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⇑</mo></mrow><annotation encoding="application/x-tex">\Uparrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mrel">⇑</span></span></span></span></td>
+<td style="text-align:left">\Uparrow</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>x</mi></mrow><mo>˙</mo></mover></mrow><annotation encoding="application/x-tex">\dot{x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.66786em;"></span><span class="strut bottom" style="height:0.66786em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit">x</span></span></span><span style="top:0em;margin-left:0.05556em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>˙</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></td>
+<td style="text-align:left">\dot{x}</td>
 </tr>
 <tr>
-<td align="center">$\Downarrow$</td>
-<td align="left">\Downarrow</td>
-<td align="center">$\ddot{x}$</td>
-<td align="left">\ddot{x}</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⇓</mo></mrow><annotation encoding="application/x-tex">\Downarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mrel">⇓</span></span></span></span></td>
+<td style="text-align:left">\Downarrow</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>x</mi></mrow><mo>¨</mo></mover></mrow><annotation encoding="application/x-tex">\ddot{x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.66786em;"></span><span class="strut bottom" style="height:0.66786em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit">x</span></span></span><span style="top:0em;margin-left:0.05556em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¨</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></td>
+<td style="text-align:left">\ddot{x}</td>
 </tr>
-<tr>
-<td align="center">&nbsp;</td>
-<td align="left"></td>
-<td align="center"></td>
-<td align="left"></td>
-</tr>
-</tbody></table>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
-<th align="center">显示</th>
-<th align="left">代码</th>
-<th align="center">显示</th>
-<th align="left">代码</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:left">代码</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:left">代码</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">$\pm$</td>
-<td align="left">\pm</td>
-<td align="center">$\log$</td>
-<td align="left">\log</td>
+<tbody>
+<tr>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>±</mo></mrow><annotation encoding="application/x-tex">\pm</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.58333em;"></span><span class="strut bottom" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord">±</span></span></span></span></td>
+<td style="text-align:left">\pm</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>log</mi></mrow><annotation encoding="application/x-tex">\log</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span></span></span></span></td>
+<td style="text-align:left">\log</td>
 </tr>
 <tr>
-<td align="center">$\times$</td>
-<td align="left">\times</td>
-<td align="center">$\lg$</td>
-<td align="left">\lg</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo></mrow><annotation encoding="application/x-tex">\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.58333em;"></span><span class="strut bottom" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord">×</span></span></span></span></td>
+<td style="text-align:left">\times</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>lg</mi></mrow><annotation encoding="application/x-tex">\lg</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mop">l<span style="margin-right:0.01389em;">g</span></span></span></span></span></td>
+<td style="text-align:left">\lg</td>
 </tr>
 <tr>
-<td align="center">$\div$</td>
-<td align="left">\div</td>
-<td align="center">$\ln$</td>
-<td align="left">\ln</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>÷</mo></mrow><annotation encoding="application/x-tex">\div</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.58333em;"></span><span class="strut bottom" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord">÷</span></span></span></span></td>
+<td style="text-align:left">\div</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ln</mi></mrow><annotation encoding="application/x-tex">\ln</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mop">ln</span></span></span></span></td>
+<td style="text-align:left">\ln</td>
 </tr>
 <tr>
-<td align="center">$\mid$</td>
-<td align="left">\mid</td>
-<td align="center">$\backsim$</td>
-<td align="left">\backsim</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∣</mo></mrow><annotation encoding="application/x-tex">\mid</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mrel">∣</span></span></span></span></td>
+<td style="text-align:left">\mid</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∽</mo></mrow><annotation encoding="application/x-tex">\backsim</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.37788em;"></span><span class="strut bottom" style="height:0.37788em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel amsrm">∽</span></span></span></span></td>
+<td style="text-align:left">\backsim</td>
 </tr>
 <tr>
-<td align="center">$\nmid$</td>
-<td align="left">\nmid</td>
-<td align="center">$\cong$</td>
-<td align="left">\cong</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∤</mo></mrow><annotation encoding="application/x-tex">\nmid</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.74111em;"></span><span class="strut bottom" style="height:0.99253em;vertical-align:-0.25142em;"></span><span class="base textstyle uncramped"><span class="mrel amsrm">∤</span></span></span></span></td>
+<td style="text-align:left">\nmid</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≅</mo></mrow><annotation encoding="application/x-tex">\cong</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.589em;"></span><span class="strut bottom" style="height:0.589em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel">≅</span></span></span></span></td>
+<td style="text-align:left">\cong</td>
 </tr>
 <tr>
-<td align="center">$\cdot$</td>
-<td align="left">\cdot</td>
-<td align="center">$\angle A$</td>
-<td align="left">\angle A</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⋅</mo></mrow><annotation encoding="application/x-tex">\cdot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.44445em;"></span><span class="strut bottom" style="height:0.44445em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">⋅</span></span></span></span></td>
+<td style="text-align:left">\cdot</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∠</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">\angle A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69224em;"></span><span class="strut bottom" style="height:0.69224em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">∠</span><span class="mord mathit">A</span></span></span></span></td>
+<td style="text-align:left">\angle A</td>
 </tr>
 <tr>
-<td align="center">$\circ$</td>
-<td align="left">\circ</td>
-<td align="center">$\sin$</td>
-<td align="left">\sin</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∘</mo></mrow><annotation encoding="application/x-tex">\circ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.44445em;"></span><span class="strut bottom" style="height:0.44445em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">∘</span></span></span></span></td>
+<td style="text-align:left">\circ</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>sin</mi></mrow><annotation encoding="application/x-tex">\sin</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.66786em;"></span><span class="strut bottom" style="height:0.66786em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mop">sin</span></span></span></span></td>
+<td style="text-align:left">\sin</td>
 </tr>
 <tr>
-<td align="center">$\ast$</td>
-<td align="left">\ast</td>
-<td align="center">$\cos$</td>
-<td align="left">\cos</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">\ast</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.46528em;"></span><span class="strut bottom" style="height:0.46528em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">∗</span></span></span></span></td>
+<td style="text-align:left">\ast</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>cos</mi></mrow><annotation encoding="application/x-tex">\cos</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mop">cos</span></span></span></span></td>
+<td style="text-align:left">\cos</td>
 </tr>
 <tr>
-<td align="center">$\bigodot$</td>
-<td align="left">\bigodot</td>
-<td align="center">$\tan$</td>
-<td align="left">\tan</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⨀</mo></mrow><annotation encoding="application/x-tex">\bigodot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">⨀</span></span></span></span></td>
+<td style="text-align:left">\bigodot</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>tan</mi></mrow><annotation encoding="application/x-tex">\tan</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.61508em;"></span><span class="strut bottom" style="height:0.61508em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mop">tan</span></span></span></span></td>
+<td style="text-align:left">\tan</td>
 </tr>
 <tr>
-<td align="center">$\bigotimes$</td>
-<td align="left">\bigotimes</td>
-<td align="center">$\csc$</td>
-<td align="left">\csc</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⨂</mo></mrow><annotation encoding="application/x-tex">\bigotimes</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">⨂</span></span></span></span></td>
+<td style="text-align:left">\bigotimes</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>csc</mi></mrow><annotation encoding="application/x-tex">\csc</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mop">csc</span></span></span></span></td>
+<td style="text-align:left">\csc</td>
 </tr>
 <tr>
-<td align="center">$\bigoplus$</td>
-<td align="left">oplus</td>
-<td align="center">$\sec$</td>
-<td align="left">\sec</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⨁</mo></mrow><annotation encoding="application/x-tex">\bigoplus</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">⨁</span></span></span></span></td>
+<td style="text-align:left">oplus</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>sec</mi></mrow><annotation encoding="application/x-tex">\sec</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mop">sec</span></span></span></span></td>
+<td style="text-align:left">\sec</td>
 </tr>
 <tr>
-<td align="center">$\leq$</td>
-<td align="left">\leq</td>
-<td align="center">$\cot$</td>
-<td align="left">\cot</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.63597em;"></span><span class="strut bottom" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="base textstyle uncramped"><span class="mrel">≤</span></span></span></span></td>
+<td style="text-align:left">\leq</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>cot</mi></mrow><annotation encoding="application/x-tex">\cot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.61508em;"></span><span class="strut bottom" style="height:0.61508em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mop">cot</span></span></span></span></td>
+<td style="text-align:left">\cot</td>
 </tr>
 <tr>
-<td align="center">$\geq$</td>
-<td align="left">\geq</td>
-<td align="center">$\int$</td>
-<td align="left">\int</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.63597em;"></span><span class="strut bottom" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="base textstyle uncramped"><span class="mrel">≥</span></span></span></span></td>
+<td style="text-align:left">\geq</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∫</mo></mrow><annotation encoding="application/x-tex">\int</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.805em;"></span><span class="strut bottom" style="height:1.11112em;vertical-align:-0.30612em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∫</span></span></span></span></td>
+<td style="text-align:left">\int</td>
 </tr>
 <tr>
-<td align="center">$\neq$</td>
-<td align="left">\neq</td>
-<td align="center">$\iint$</td>
-<td align="left">\iint</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≠</mo></mrow><annotation encoding="application/x-tex">\neq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.716em;"></span><span class="strut bottom" style="height:0.9309999999999999em;vertical-align:-0.215em;"></span><span class="base textstyle uncramped"><span class="mrel">≠</span></span></span></span></td>
+<td style="text-align:left">\neq</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∬</mo></mrow><annotation encoding="application/x-tex">\iint</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.805em;"></span><span class="strut bottom" style="height:1.111em;vertical-align:-0.306em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0004999999999999727em;">∬</span></span></span></span></td>
+<td style="text-align:left">\iint</td>
 </tr>
 <tr>
-<td align="center">$\approx$</td>
-<td align="left">\approx</td>
-<td align="center">$\iiint$</td>
-<td align="left">\iiint</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≈</mo></mrow><annotation encoding="application/x-tex">\approx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.48312em;"></span><span class="strut bottom" style="height:0.48312em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel">≈</span></span></span></span></td>
+<td style="text-align:left">\approx</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∭</mo></mrow><annotation encoding="application/x-tex">\iiint</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.805em;"></span><span class="strut bottom" style="height:1.111em;vertical-align:-0.306em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0004999999999999727em;">∭</span></span></span></span></td>
+<td style="text-align:left">\iiint</td>
 </tr>
 <tr>
-<td align="center">$\equiv$</td>
-<td align="left">\equiv</td>
-<td align="center">$\partial$</td>
-<td align="left">\partial</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≡</mo></mrow><annotation encoding="application/x-tex">\equiv</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.46375em;"></span><span class="strut bottom" style="height:0.46375em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel">≡</span></span></span></span></td>
+<td style="text-align:left">\equiv</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∂</mi></mrow><annotation encoding="application/x-tex">\partial</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm" style="margin-right:0.05556em;">∂</span></span></span></span></td>
+<td style="text-align:left">\partial</td>
 </tr>
 <tr>
-<td align="center">$\sum$</td>
-<td align="left">\sum</td>
-<td align="center">$\oint$</td>
-<td align="left">\oint</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∑</mo></mrow><annotation encoding="application/x-tex">\sum</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">∑</span></span></span></span></td>
+<td style="text-align:left">\sum</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∮</mo></mrow><annotation encoding="application/x-tex">\oint</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.805em;"></span><span class="strut bottom" style="height:1.11112em;vertical-align:-0.30612em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∮</span></span></span></span></td>
+<td style="text-align:left">\oint</td>
 </tr>
 <tr>
-<td align="center">$\prod$</td>
-<td align="left">\prod</td>
-<td align="center">$\prime$</td>
-<td align="left">\prime</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∏</mo></mrow><annotation encoding="application/x-tex">\prod</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">∏</span></span></span></span></td>
+<td style="text-align:left">\prod</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">′</mi></mrow><annotation encoding="application/x-tex">\prime</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.55556em;"></span><span class="strut bottom" style="height:0.55556em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">′</span></span></span></span></td>
+<td style="text-align:left">\prime</td>
 </tr>
 <tr>
-<td align="center">$\coprod$</td>
-<td align="left">\coprod</td>
-<td align="center">$\lim$</td>
-<td align="left">\lim</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∐</mo></mrow><annotation encoding="application/x-tex">\coprod</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">∐</span></span></span></span></td>
+<td style="text-align:left">\coprod</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>lim</mi></mrow><annotation encoding="application/x-tex">\lim</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mop">lim</span></span></span></span></td>
+<td style="text-align:left">\lim</td>
 </tr>
 <tr>
-<td align="center">$\backslash$</td>
-<td align="left">\backslash</td>
-<td align="center">$\nabla$</td>
-<td align="left">\nabla</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">\</mi></mrow><annotation encoding="application/x-tex">\backslash</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">\</span></span></span></span></td>
+<td style="text-align:left">\backslash</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∇</mi></mrow><annotation encoding="application/x-tex">\nabla</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">∇</span></span></span></span></td>
+<td style="text-align:left">\nabla</td>
 </tr>
-<tr>
-<td align="center">&nbsp;</td>
-<td align="left"></td>
-<td align="center"></td>
-<td align="left"></td>
-</tr>
-</tbody></table>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
-<th align="center">显示</th>
-<th align="left">代码</th>
-<th align="center">显示</th>
-<th align="left">代码</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:left">代码</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:left">代码</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">$\emptyset$</td>
-<td align="left">\emptyset</td>
-<td align="center">$\because$</td>
-<td align="left">\because</td>
+<tbody>
+<tr>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:0.80556em;vertical-align:-0.05556em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">∅</span></span></span></span></td>
+<td style="text-align:left">\emptyset</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∵</mo></mrow><annotation encoding="application/x-tex">\because</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69224em;"></span><span class="strut bottom" style="height:0.69224em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel amsrm">∵</span></span></span></span></td>
+<td style="text-align:left">\because</td>
 </tr>
 <tr>
-<td align="center">$\in$</td>
-<td align="left">\in</td>
-<td align="center">$\therefore$</td>
-<td align="left">\therefore</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.5391em;"></span><span class="strut bottom" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mrel">∈</span></span></span></span></td>
+<td style="text-align:left">\in</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∴</mo></mrow><annotation encoding="application/x-tex">\therefore</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69224em;"></span><span class="strut bottom" style="height:0.69224em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel amsrm">∴</span></span></span></span></td>
+<td style="text-align:left">\therefore</td>
 </tr>
 <tr>
-<td align="center">$\notin$</td>
-<td align="left">\notin</td>
-<td align="center">$\neg$</td>
-<td align="left">\neg</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">⊥</mi></mrow><annotation encoding="application/x-tex">\bot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">⊥</span></span></span></span></td>
+<td style="text-align:left">\bot</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">¬</mi></mrow><annotation encoding="application/x-tex">\neg</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">¬</span></span></span></span></td>
+<td style="text-align:left">\neg</td>
 </tr>
 <tr>
-<td align="center">$\subset$</td>
-<td align="left">\subset</td>
-<td align="center">$\forall$</td>
-<td align="left">\forall</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⊂</mo></mrow><annotation encoding="application/x-tex">\subset</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.5391em;"></span><span class="strut bottom" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mrel">⊂</span></span></span></span></td>
+<td style="text-align:left">\subset</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∀</mi></mrow><annotation encoding="application/x-tex">\forall</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">∀</span></span></span></span></td>
+<td style="text-align:left">\forall</td>
 </tr>
 <tr>
-<td align="center">$\supset$</td>
-<td align="left">\supset</td>
-<td align="center">$\exists$</td>
-<td align="left">\exists</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⊃</mo></mrow><annotation encoding="application/x-tex">\supset</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.5391em;"></span><span class="strut bottom" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mrel">⊃</span></span></span></span></td>
+<td style="text-align:left">\supset</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∃</mi></mrow><annotation encoding="application/x-tex">\exists</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">∃</span></span></span></span></td>
+<td style="text-align:left">\exists</td>
 </tr>
 <tr>
-<td align="center">$\subseteq$</td>
-<td align="left">\subseteq</td>
-<td align="center">$\not\subset$</td>
-<td align="left">\not\subset</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⊆</mo></mrow><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.63597em;"></span><span class="strut bottom" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="base textstyle uncramped"><span class="mrel">⊆</span></span></span></span></td>
+<td style="text-align:left">\subseteq</td>
+<td style="text-align:center">\not\subset</td>
+<td style="text-align:left">\not\subset</td>
 </tr>
 <tr>
-<td align="center">$\supseteq$</td>
-<td align="left">\supseteq</td>
-<td align="center">$\not&lt;$</td>
-<td align="left">\not&lt;</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⊇</mo></mrow><annotation encoding="application/x-tex">\supseteq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.63597em;"></span><span class="strut bottom" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="base textstyle uncramped"><span class="mrel">⊇</span></span></span></span></td>
+<td style="text-align:left">\supseteq</td>
+<td style="text-align:center">\not<</td>
+<td style="text-align:left">\not&lt;</td>
 </tr>
 <tr>
-<td align="center">$\cap$</td>
-<td align="left">\cap</td>
-<td align="center">$\not&gt;$</td>
-<td align="left">\not&gt;</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∩</mo></mrow><annotation encoding="application/x-tex">\cap</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.55556em;"></span><span class="strut bottom" style="height:0.55556em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">∩</span></span></span></span></td>
+<td style="text-align:left">\cap</td>
+<td style="text-align:center">\not></td>
+<td style="text-align:left">\not&gt;</td>
 </tr>
 <tr>
-<td align="center">$\cup$</td>
-<td align="left">\cup</td>
-<td align="center">$\not=$</td>
-<td align="left">\not=</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∪</mo></mrow><annotation encoding="application/x-tex">\cup</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.55556em;"></span><span class="strut bottom" style="height:0.55556em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">∪</span></span></span></span></td>
+<td style="text-align:left">\cup</td>
+<td style="text-align:center">\not=</td>
+<td style="text-align:left">\not=</td>
 </tr>
 <tr>
-<td align="center">$\vee$</td>
-<td align="left">\vee</td>
-<td align="center"></td>
-<td align="left"></td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∨</mo></mrow><annotation encoding="application/x-tex">\vee</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.55556em;"></span><span class="strut bottom" style="height:0.55556em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">∨</span></span></span></span></td>
+<td style="text-align:left">\vee</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="center">$\wedge$</td>
-<td align="left">\wedge</td>
-<td align="center"></td>
-<td align="left"></td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∧</mo></mrow><annotation encoding="application/x-tex">\wedge</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.55556em;"></span><span class="strut bottom" style="height:0.55556em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">∧</span></span></span></span></td>
+<td style="text-align:left">\wedge</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="center">$\uplus$</td>
-<td align="left">\uplus</td>
-<td align="center"></td>
-<td align="left"></td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⊎</mo></mrow><annotation encoding="application/x-tex">\uplus</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.55556em;"></span><span class="strut bottom" style="height:0.55556em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord">⊎</span></span></span></span></td>
+<td style="text-align:left">\uplus</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="center">$\top$</td>
-<td align="left">\top</td>
-<td align="center"></td>
-<td align="left"></td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">⊤</mi></mrow><annotation encoding="application/x-tex">\top</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">⊤</span></span></span></span></td>
+<td style="text-align:left">\top</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
 </tr>
-<tr>
-<td align="center">$\bot$</td>
-<td align="left">\bot</td>
-<td align="center"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">$\complement$</td>
-<td align="left">\complement</td>
-<td align="center"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">&nbsp;</td>
-<td align="left"></td>
-<td align="center"></td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-</li>
-</ol>
-<h3 id="写完人累麻了，就当熟练一遍markdown了。"><a href="#写完人累麻了，就当熟练一遍markdown了。" class="headerlink" title="写完人累麻了，就当熟练一遍markdown了。"></a>写完人累麻了，就当熟练一遍markdown了。</h3>
+</tbody>
+</table>
+<h3 id="写完人累麻了就当熟练一遍markdown了"><a class="markdownIt-Anchor" href="#写完人累麻了就当熟练一遍markdown了"></a> 写完人累麻了，就当熟练一遍markdown了。</h3>
+
         <!-- 分类文章 -->
         
       </div>
       <div class="post-content-inner-space">
         
           <div class="space-toc-main animate__animated  animate__fadeInUp">
-            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#Quick-Start"><span class="space-toc-text">Quick Start</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E5%86%85%E5%AE%B9%E5%88%92%E5%88%86"><span class="space-toc-text">内容划分</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9"><span class="space-toc-text">文本内容</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="space-toc-text">数学公式</span></a></li></ol>
+            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#quick-start"><span class="space-toc-text"> Quick Start</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E5%86%85%E5%AE%B9%E5%88%92%E5%88%86"><span class="space-toc-text"> 内容划分</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9"><span class="space-toc-text"> 文本内容</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="space-toc-text"> 数学公式</span></a></li></ol>
            </div>
         
       </div>
