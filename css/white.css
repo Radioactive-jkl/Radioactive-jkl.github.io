@@ -55,7 +55,7 @@ span {
   justify-content: center;
 }
 .menu-inner {
-  width: 1130px;
+  width: 1100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,7 +133,7 @@ span {
   justify-content: center;
 }
 .body-inner {
-  width: 1130px;
+  width: 1100px;
   background-color: #fff;
 }
 .intro-content {
@@ -258,7 +258,7 @@ a {
 }
 .footer-inner {
   padding: 40px 0px;
-  width: 1130px;
+  width: 1100px;
   display: flex;
   justify-content: space-between;
 }
@@ -703,7 +703,7 @@ li p {
   font-family: Gothic;
 }
 .post-content-inner .post-content-inner-space {
-  flex-basis: 165px;
+  flex-basis: 150px;
 }
 .post-content-inner .post-content-inner-space .space-toc-main {
   position: sticky;
