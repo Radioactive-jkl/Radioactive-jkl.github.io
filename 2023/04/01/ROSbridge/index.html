@@ -31,7 +31,7 @@
 
     
   
-<meta name="generator" content="Hexo 5.4.2"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
+<meta name="generator" content="Hexo 5.4.2"><style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 
 <body>
@@ -122,14 +122,14 @@
         <!-- top型目录 -->
         
         <p>ROS有很多开源的软件包、工具包，但是资料实在有限，只能自己摸索使用。最近有ROS与非ROS系统通信和ROS数据可视化的需求，于是用到了<strong>ROS bridge</strong>这一工具。</p>
-<h2 id="通信架构">通信架构</h2>
+<h2 id="通信架构"><a class="markdownIt-Anchor" href="#通信架构"></a> 通信架构</h2>
 <ul>
 <li><strong>服务端</strong>（一般是ROS端）通过rosbridge_server运行已架设好的完整服务器</li>
 <li><strong>客户端</strong>（一般是电脑）通过roslib的API编写相应<u>非ROS程序</u>实现与服务器的连接和交互</li>
 </ul>
-<h2 id="文件结构">文件结构</h2>
+<h2 id="文件结构"><a class="markdownIt-Anchor" href="#文件结构"></a> 文件结构</h2>
 <p>服务端</p>
-<pre><code>rosbridge
+<pre class="highlight"><code class>rosbridge
   rosbridge_server
     rosbridge_websocket
     ...
@@ -142,21 +142,21 @@
   
 </code></pre>
 <p>客户端</p>
-<pre><code>roslibjs
+<pre class="highlight"><code class>roslibjs
   ...
   
 </code></pre>
-<h2 id="roslibjs与websocket">roslibjs与websocket</h2>
-<h3 id="服务端">服务端</h3>
+<h2 id="roslibjs与websocket"><a class="markdownIt-Anchor" href="#roslibjs与websocket"></a> roslibjs与websocket</h2>
+<h3 id="服务端"><a class="markdownIt-Anchor" href="#服务端"></a> 服务端</h3>
 <p>首先肯定是启动各节点，让各Topic跑起来，以及：</p>
-<pre><code>roslaunch rosbridge_server rosbridge_websocket
+<pre class="highlight"><code class>roslaunch rosbridge_server rosbridge_websocket
 </code></pre>
 <p>获取IP与端口号，默认是<code>ws://0.0.0.0:9090</code> ，若客户端不在本机上就要使用其IPv4:</p>
-<pre><code>ifconfig
+<pre class="highlight"><code class>ifconfig
 </code></pre>
-<h3 id="客户端">客户端</h3>
+<h3 id="客户端"><a class="markdownIt-Anchor" href="#客户端"></a> 客户端</h3>
 <p>先下载<a target="_blank" rel="noopener" href="https://github.com/RobotWebTools/roslibjs"><code>roslibjs</code></a>，解压后文件夹内打开终端：</p>
-<pre><code>npm install
+<pre class="highlight"><code class>npm install
 
 一般会报错，按提示输指令修复。
 
@@ -169,7 +169,7 @@ cnpm install
 <ul>
 <li><code>imu.html</code></li>
 </ul>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class="highlight"><code class>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -281,7 +281,7 @@ cnpm install
 <ul>
 <li><code>imu.css</code></li>
 </ul>
-<pre><code>#connected&#123;
+<pre class="highlight"><code class>#connected&#123;
     color:#00D600; 
     display:none;
 &#125;
@@ -301,7 +301,7 @@ li&#123;
 
 </code></pre>
 <p>然后就可以用浏览器打开服务器地址看到页面了。</p>
-<h2 id="roslibpy与tcpsocket">roslibpy与TCPsocket</h2>
+<h2 id="roslibpy与tcpsocket"><a class="markdownIt-Anchor" href="#roslibpy与tcpsocket"></a> roslibpy与TCPsocket</h2>
 <p>我当时因为没找到介绍资料，只能自己摸索API使用，准备写这一部分时才发现有<a target="_blank" rel="noopener" href="https://roslibpy.readthedocs.io/en/latest/">文档</a>，还有人做了<a target="_blank" rel="noopener" href="https://roslibpy-docs-zh.readthedocs.io/zh/latest/">汉化</a>。</p>
 
         <!-- 分类文章 -->
@@ -310,7 +310,7 @@ li&#123;
       <div class="post-content-inner-space">
         
           <div class="space-toc-main animate__animated  animate__fadeInUp">
-            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E9%80%9A%E4%BF%A1%E6%9E%B6%E6%9E%84"><span class="space-toc-text">通信架构</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="space-toc-text">文件结构</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#roslibjs%E4%B8%8Ewebsocket"><span class="space-toc-text">roslibjs与websocket</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#roslibpy%E4%B8%8Etcpsocket"><span class="space-toc-text">roslibpy与TCPsocket</span></a></li></ol>
+            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E9%80%9A%E4%BF%A1%E6%9E%B6%E6%9E%84"><span class="space-toc-text"> 通信架构</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="space-toc-text"> 文件结构</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#roslibjs%E4%B8%8Ewebsocket"><span class="space-toc-text"> roslibjs与websocket</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#roslibpy%E4%B8%8Etcpsocket"><span class="space-toc-text"> roslibpy与TCPsocket</span></a></li></ol>
            </div>
         
       </div>
