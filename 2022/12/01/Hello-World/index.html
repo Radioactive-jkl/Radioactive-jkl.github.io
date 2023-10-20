@@ -142,8 +142,10 @@
 <hr>
 <p>以上是Hexo官方的发博客方法，要想写博客还得学学markdown语法。<br>
 <br><br>
+<br><br>
 <br></p>
 <h1 id="markdown-笔记"><a class="markdownIt-Anchor" href="#markdown-笔记"></a> Markdown 笔记</h1>
+<br>
 <h2 id="内容划分"><a class="markdownIt-Anchor" href="#内容划分"></a> 内容划分</h2>
 <h3 id="标题"><a class="markdownIt-Anchor" href="#标题"></a> 标题</h3>
 <p>       markdown有<strong>六级标题</strong>， <code>#</code> 加一个空格后接标题内容即可。</p>
@@ -195,7 +197,7 @@
 <p>       使用 <code>&amp;nbsp;</code> 占位需要空的那行，或者在行末用 <code>&lt;br/&gt;</code> 换行。<br>
 <br></p>
 <h3 id="toc"><a class="markdownIt-Anchor" href="#toc"></a> TOC</h3>
-<p>       全称为 Table of Content，列出全部标题（小目录）<br></p>
+<p>       全称为 Table of Content，列出全部标题（小目录）。</p>
 <pre class="highlight"><code class>    [toc] 或者 @[toc]
     # 一级标题
     ## 二级标题
@@ -204,9 +206,9 @@
 <br>
 <h2 id="文本内容"><a class="markdownIt-Anchor" href="#文本内容"></a> 文本内容</h2>
 <h3 id="字体"><a class="markdownIt-Anchor" href="#字体"></a> 字体</h3>
-<p>       <em>斜体文本</em>：可以在需要标注为斜体文本前及斜 体文本结尾，输入一个星号 <code>*</code> 或者一个下划线 <code>_</code>。<br>
+<p>       <em>斜体文本</em>：可以在需要标注为斜体文本前及斜体文本结尾，输入一个星号 <code>*</code> 或者一个下划线 <code>_</code>。<br>
        <strong>粗体文本</strong>：可以在需要标注为粗体文本前及粗体文本结尾，输入两个星号 <code>**</code> 或者两个下划线 <code>__</code>。<br>
-       <em><strong>粗斜体文本</strong></em>：可以在需要标注为粗斜体文本前及粗斜体文本结尾，输入三个星号 <code>***</code> 或者三个下划线 <code>___</code>。</p>
+       <em><strong>粗斜体文本</strong></em>：可以在需标注为粗斜体文本前及粗斜体文本尾，输入三个星号 <code>***</code> 或三个下划线 <code>___</code>。</p>
 <pre class="highlight"><code class>    *斜体文本*
     **粗体文本**
     ***粗斜体文本***
@@ -219,7 +221,8 @@
 <font color="#0099ff" size="7" face="STCAIYUN">Radioactive</font></p>
 <pre class="highlight"><code class>     &lt;font color=#0099ff size=7 face=&quot;STCAIYUN&quot;&gt;Radioactive&lt;/font&gt;
 </code></pre>
-<br>
+<p>       支持HTML就能整很多活，<s>额反正md渲染的实质是html</s>。<br>
+<br></p>
 <h3 id="划线"><a class="markdownIt-Anchor" href="#划线"></a> 划线</h3>
 <p>       Markdown的<u>下划线</u>是在文字首部和尾部加上 <code>&lt;u&gt;</code> 与 <code>&lt;/u&gt;</code> ，在<s>需要删除的文字</s>前后各使用两个 <code>~</code>，格式如下：</p>
 <pre class="highlight"><code class>    &lt;u&gt;这行文字将被添加下划线&lt;/u&gt;
@@ -325,7 +328,7 @@ $$
 <pre class="highlight"><code class>    \lim&#123;变量 \to 表达式&#125; 表达式
 </code></pre>
 <p>       累加和累乘：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></msubsup><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\sum_{i=0}^{n} x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.0500099999999999em;vertical-align:-0.30001em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">∑</span><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathrm">0</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∏</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi mathvariant="normal">∞</mi></mrow></msubsup><msub><mi>y</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">\prod_{j=0}^{\infty} y_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.186118em;vertical-align:-0.436118em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">∏</span><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mrel">=</span><span class="mord mathrm">0</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">∞</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit" style="margin-right:0.05724em;">j</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></p>
-<pre class="highlight"><code class>        \sum_&#123;下标表达式&#125;^&#123;上标表达式&#125; &#123;累加表达式&#125;
+<pre class="highlight"><code class>    \sum_&#123;下标表达式&#125;^&#123;上标表达式&#125; &#123;累加表达式&#125;
     \prod_&#123;下标表达式&#125;^&#123;上标表达式&#125; &#123;累加表达式&#125;
 </code></pre>
 <p>       矩阵使用方法，如下：</p>
@@ -346,27 +349,28 @@ $$
 $$
 
     其中：
-    省略号          \vdots
+    \vdots              省略号
 
-    不带括号的矩阵   \begin&#123;matrix&#125;
-                    ···
-                    \end&#123;matrix&#125;
+    \begin&#123;matrix&#125;      不带括号的矩阵
+    ···
+    \end&#123;matrix&#125;
 
-    带()的矩阵       \begin&#123;pmatrix&#125;
-                    ···
-                    \end&#123;pmatrix&#125;   
+    \begin&#123;pmatrix&#125;     带()的矩阵
+    ···
+    \end&#123;pmatrix&#125;
 
-    带&#123;&#125;的矩阵       \left&#123;
-                    \begin&#123;matrix&#125;
-                    ···
-                    \end&#123;matrix&#125;
-                    \right&#125;
+    \left&#123;              带&#123;&#125;的矩阵
+    \begin&#123;matrix&#125;
+    ···
+    \end&#123;matrix&#125;
+    \right&#125;
 
-    带[]的矩阵       \left[
-                    \begin&#123;matrix&#125;
-                    ···
-                    \end&#123;matrix&#125;
-                    \right]
+    \left[              带[]的矩阵
+    \begin&#123;matrix&#125;
+    ···
+    \end&#123;matrix&#125;
+    \right]
+
 </code></pre>
 <br>
 <h3 id="公式批注"><a class="markdownIt-Anchor" href="#公式批注"></a> 公式批注</h3>
