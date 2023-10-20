@@ -125,13 +125,15 @@
 <br></p>
 <h2 id="通信架构"><a class="markdownIt-Anchor" href="#通信架构"></a> 通信架构</h2>
 <ul>
-<li>**服务端：**通过rosbridge_server运行已架设好应用层API的完整服务器</li>
-<li>**客户端：**通过roslib的API编写相应<code>非ROS程序</code>实现与服务器的网络连接和数据通信<br>
+<li><strong>服务端</strong> 通过rosbridge_server运行已架设好应用层API的完整服务器</li>
+<li><strong>客户端</strong> 通过roslib的API编写相应<code>非ROS程序</code>实现与服务器的网络连接和数据通信<br>
 <br><br>
 <br></li>
 </ul>
 <h2 id="文件结构"><a class="markdownIt-Anchor" href="#文件结构"></a> 文件结构</h2>
-<p>       服务端</p>
+<ul>
+<li>服务端</li>
+</ul>
 <pre class="highlight"><code class>rosbridge
 ├── rosbridge_server
 |   ├── rosbridge_websocket
@@ -144,7 +146,9 @@
 └── ...
   
 </code></pre>
-<p>       客户端</p>
+<ul>
+<li>客户端</li>
+</ul>
 <pre class="highlight"><code class>roslibjs
   或
 roslibpy
