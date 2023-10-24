@@ -165,7 +165,7 @@ roslibpy
 <p>       获取IP与端口号，本机默认是<code>ws://0.0.0.0:9090</code> ，若客户端不在本机上就要使用其IPv4:</p>
 <pre class="highlight"><code class>ifconfig
 </code></pre>
-<p>       这样服务端就算架设完毕了，客户端可以通过各种API与该服务端交互。<br>
+<p>       这样服务端就算架设完毕了，客户端可以通过各种API与该服务端交互。<strong>但是注意</strong>，两端仅这样连接需要在同一局域网下才能通信，真正远程实用还需要内网穿透或把服务端挂在公共域名上。<br>
 <br></p>
 <h3 id="客户端"><a class="markdownIt-Anchor" href="#客户端"></a> 客户端</h3>
 <p>       搭建网页客户端要先下载<a target="_blank" rel="noopener" href="https://github.com/RobotWebTools/roslibjs"><u><code>roslibjs</code></u></a>，解压后文件夹内打开有<code>Node.js</code>环境的终端：</p>
