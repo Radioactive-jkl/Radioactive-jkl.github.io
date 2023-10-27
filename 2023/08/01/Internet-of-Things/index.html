@@ -122,8 +122,8 @@
         <!-- top型目录 -->
         
         <p>       大二下期末考试前几天水的两个小比赛都用到了物联网，所以简单学了些相关的东西。<br>
+<br><br>
 <br></p>
-<h1 id="under-construction-还在写"><a class="markdownIt-Anchor" href="#under-construction-还在写"></a> UNDER CONSTRUCTION… 还在写</h1>
 <h2 id="物联网协议"><a class="markdownIt-Anchor" href="#物联网协议"></a> 物联网协议</h2>
 <p>       目前物联网平台还是挺多的，OneNet、阿里云物联网平台等等。物联网设备最重要的就是联网通讯了，上报设备的状态或者信息，接收指令等等。物联网的通讯协议常见的有下面七种:MQTT、 DDS、 AMQP、XMPP、 JMS、 REST、 CoAP。</p>
 <ul>
@@ -152,7 +152,7 @@
 <li><code>事件</code>：设备的功能模型之一，设备运行时的事件。事件一般包含需要被外部感知和处理的通知信息，可包含多个输出参数。例如，某项任务完成的信息，或者设备发生故障或告警时的温度等，事件可以被订阅和推送。</li>
 <li><code>数据流转</code>：物联网平台消息转发的数据流转功能，可将Topic中的数据转发至其他Topic或其他阿里云服务进行存储或处理。</li>
 </ul>
-<p>       例如，新建一个产品<em>监测系统</em>，在其功能定义中创建<em>温度</em>（物理型中的属性），再创建两个设备<em>传感器节点</em>和<em>监测软件</em>，前者的实质是一个ESP32和一个温度传感器，后者的实质是电脑上的一个程序。那么就可以实现如下流程（大致是这样）：ESP32读取传感器采集的温度数据，连接WiFi并通过阿里云API和<em>传感器节点</em>的信息连接云服务器，将温度上传至云端该设备的物理型话题，通过<em>数据流转</em>设定规则把数据转发到<em>监测软件</em>设备的物理型话题，软件通过API和其设备信息连上阿里云服务器并订阅自身物理型话题就可以获取温度数据。当然这只是一个基本流程，更多操作官方文档都有写。<br>
+<p>       例如，新建一个产品<strong>监测系统</strong>，在其功能定义中创建<strong>温度</strong>（物理型中的属性），再创建两个设备<strong>传感器节点</strong>和<strong>监测软件</strong>，前者的实质是一个ESP32和一个温度传感器，后者的实质是电脑上的一个程序。那么就可以实现如下流程（大致是这样）：ESP32读取传感器采集的温度数据，连接WiFi并通过阿里云API和<strong>传感器节点</strong>的信息连接云服务器，将温度上传至云端该设备的物理型话题，通过<strong>数据流转</strong>设定规则把数据转发到<strong>监测软件</strong>设备的物理型话题，软件通过API和其设备信息连上阿里云服务器并订阅自身物理型话题就可以获取温度数据。当然这只是一个基本流程，更多操作官方文档都有写。<br>
 <br></p>
 <h3 id="emqx平台"><a class="markdownIt-Anchor" href="#emqx平台"></a> EMQX平台</h3>
 <p>       EMQX (Erlang MQTT Broker) 是基于 Erlang/OTP 平台开发的开源物联网 MQTT 消息服务器。Erlang/OTP是出色的软实时 (Soft-Realtime)、低延时 (Low-Latency)、分布式 (Distributed)的语言平台。软件支持多种操作系统，有图形化界面，直接<a target="_blank" rel="noopener" href="https://www.emqx.com/zh/try?product=broker"><u>EMQX官网</u></a>下载使用，用法类似于上面的OneNet/阿里云平台，只是服务器用的是自己设备。<br>
