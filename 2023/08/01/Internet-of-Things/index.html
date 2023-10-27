@@ -124,7 +124,7 @@
         <p>       大二下期末考试前几天水的两个小比赛都用到了物联网，所以简单学了些相关的东西。<br>
 <br></p>
 <h1 id="under-construction-还在写"><a class="markdownIt-Anchor" href="#under-construction-还在写"></a> UNDER CONSTRUCTION… 还在写</h1>
-<h2 id="物联网协议简介"><a class="markdownIt-Anchor" href="#物联网协议简介"></a> 物联网协议简介</h2>
+<h2 id="物联网协议"><a class="markdownIt-Anchor" href="#物联网协议"></a> 物联网协议</h2>
 <p>       目前物联网平台还是挺多的，OneNet、阿里云物联网平台等等。物联网设备最重要的就是联网通讯了，上报设备的状态或者信息，接收指令等等。物联网的通讯协议常见的有下面七种:MQTT、 DDS、 AMQP、XMPP、 JMS、 REST、 CoAP。</p>
 <ul>
 <li>MQTT协议(低带宽)一般适用于设备数据采集从端到服务器的集中星型网络架构</li>
@@ -138,23 +138,157 @@
 <p>       MQTT因为其低带宽的优点，现在大部分嵌入式物联网设备都是采用的这种协议。<br>
 <br><br>
 <br></p>
-<h2 id="物联网平台介绍"><a class="markdownIt-Anchor" href="#物联网平台介绍"></a> 物联网平台介绍</h2>
-<br>
+<h2 id="物联网平台"><a class="markdownIt-Anchor" href="#物联网平台"></a> 物联网平台</h2>
 <h3 id="onenet阿里云物联网平台"><a class="markdownIt-Anchor" href="#onenet阿里云物联网平台"></a> OneNet/阿里云物联网平台</h3>
-<p>       一些概念。<br>
+<p>       这些商用的物联网都有<a target="_blank" rel="noopener" href="https://help.aliyun.com/zh/iot/"><u>教程和SDK文档</u></a>，读一读就差不多能上手。我刚开始用的时候主要是被一些概念糊住了。</p>
+<ul>
+<li><code>设备</code>：具体设备，可以通过该设备唯一的<code>DeviceName</code>和<code>DeviceSecret</code>和产品<code>ProductKey</code>等连接云服务器。</li>
+<li><code>产品</code>：产品是一些设备的合集，这些设备有相同的<code>ProductKey</code>。</li>
+<li><code>实例</code>：物联网平台提供的产品、设备、规则等资源管理功能。企业版（氪金）比公用（免费）实例的高级功能更多，同时在线设备数和上下行带宽更高。</li>
+<li><code>Topic</code>：话题，设备可以发布一个话题，向其上传数据，再由设备订阅该话题获取数据。类似于ROS。</li>
+<li><code>物理型</code>：对设备在云端的功能描述，包括设备的属性、服务和事件。物联网平台通过定义一种物的描述语言来描述物模型，称之为TSL（即 Thing Specification Language），采用JSON格式，可以根据TSL组装上报设备的数据。</li>
+<li><code>属性</code>：设备的功能模型之一，一般用于描述设备运行时的状态，如环境监测设备所读取的当前环境温度等。属性支持GET和SET请求方式。应用系统可发起对属性的读取和设置请求。</li>
+<li><code>服务</code>：设备的功能模型之一，设备可被外部调用的能力或方法，可设置输入参数和输出参数。相比于属性，服务可通过一条指令实现更复杂的业务逻辑，如执行某项特定的任务。</li>
+<li><code>事件</code>：设备的功能模型之一，设备运行时的事件。事件一般包含需要被外部感知和处理的通知信息，可包含多个输出参数。例如，某项任务完成的信息，或者设备发生故障或告警时的温度等，事件可以被订阅和推送。</li>
+<li><code>数据流转</code>：物联网平台消息转发的数据流转功能，可将Topic中的数据转发至其他Topic或其他阿里云服务进行存储或处理。</li>
+</ul>
+<p>       例如，新建一个产品<em>监测系统</em>，在其功能定义中创建<em>温度</em>（物理型中的属性），再创建两个设备<em>传感器节点</em>和<em>监测软件</em>，前者的实质是一个ESP32和一个温度传感器，后者的实质是电脑上的一个程序。那么就可以实现如下流程（大致是这样）：ESP32读取传感器采集的温度数据，连接WiFi并通过阿里云API和<em>传感器节点</em>的信息连接云服务器，将温度上传至云端该设备的物理型话题，通过<em>数据流转</em>设定规则把数据转发到<em>监测软件</em>设备的物理型话题，软件通过API和其设备信息连上阿里云服务器并订阅自身物理型话题就可以获取温度数据。当然这只是一个基本流程，更多操作官方文档都有写。<br>
 <br></p>
 <h3 id="emqx平台"><a class="markdownIt-Anchor" href="#emqx平台"></a> EMQX平台</h3>
-<p>       EMQX (Erlang MQTT Broker) 是基于 Erlang/OTP 平台开发的开源物联网 MQTT 消息服务器。Erlang/OTP是出色的软实时 (Soft-Realtime)、低延时 (Low-Latency)、分布式 (Distributed)的语言平台。软件支持多种操作系统，有图形化界面，直接<a target="_blank" rel="noopener" href="https://www.emqx.com/zh/try?product=broker">EMQX官网</a>下载使用，用法类似于上面的OneNet/阿里云平台。<br>
+<p>       EMQX (Erlang MQTT Broker) 是基于 Erlang/OTP 平台开发的开源物联网 MQTT 消息服务器。Erlang/OTP是出色的软实时 (Soft-Realtime)、低延时 (Low-Latency)、分布式 (Distributed)的语言平台。软件支持多种操作系统，有图形化界面，直接<a target="_blank" rel="noopener" href="https://www.emqx.com/zh/try?product=broker"><u>EMQX官网</u></a>下载使用，用法类似于上面的OneNet/阿里云平台，只是服务器用的是自己设备。<br>
 <br></p>
 <h3 id="自建平台"><a class="markdownIt-Anchor" href="#自建平台"></a> 自建平台</h3>
-<p>flask+mqtt<br>
+<p>       自己搭建物联网服务器的话，除了自己电脑，还可以用一些“派”甚至旧笔记本或小主机的主板，这样就可以放那全天运行。<br>
+<img src="/2023/08/01/Internet-of-Things/pi.jpg" alt="pi"></p>
+<p>       左边<code>Z8350</code>4+64G才360元，右边<code>树莓派4b</code>8G学长友情价980给我（当时淘宝炒到1500😭），还有个4G版本我740元卖出去的（现在降到四百多了）。<br>
+       说回搭服务器，最简单的方法就是Flask。搭好Python环境然后：</p>
+<pre class="highlight"><code class="bash">    pip install flask-mqtt
+</code></pre>
+<p>       接下来就直接写你自己的服务器了，Flask-Mqtt有<a target="_blank" rel="noopener" href="https://flask-mqtt.readthedocs.io/en/latest/"><u>官方文档</u></a>方便使用。<br>
 <br><br>
 <br></p>
 <h2 id="设备实例"><a class="markdownIt-Anchor" href="#设备实例"></a> 设备实例</h2>
-<p>       记得刚开始用ESP32时没啥资料磕磕碰碰的，当时也是用Arduino IDE，没多少代码就实现了<code>摄像头采集视频流并搭建服务器网页查看</code>，给了写STM32代码到自闭的我一点小小的开源生态震撼。现在ESP32也算是国产网红芯片了，各种资料教程一大堆。<br>
+<h3 id="mqttfx"><a class="markdownIt-Anchor" href="#mqttfx"></a> MQTT.fx</h3>
+<p>       MQTT.fx是一款基于Eclipse Paho，使用Java语言编写的MQTT客户端工具。支持通过Topic订阅和发布消息，用来前期和物理云平台调试非常方便。<a target="_blank" rel="noopener" href="http://mqttfx.jensd.de/index.php/download"><u>官网下载</u></a>安装后就可以开始用了。打开软件界面如下：<br>
+<img src="/2023/08/01/Internet-of-Things/fx.png" alt="fx"></p>
+<p>       设置配置文件的界面：<br>
+<img src="/2023/08/01/Internet-of-Things/config.png" alt="config"></p>
+<p>       上手很简单就不细说了。<br>
 <br></p>
+<h3 id="esp32arduino-ide"><a class="markdownIt-Anchor" href="#esp32arduino-ide"></a> ESP32(Arduino IDE)</h3>
+<p>       记得刚开始用ESP32时没啥资料磕磕碰碰的，当时也是用Arduino IDE，没多少代码就实现了<code>摄像头采集视频流并搭建服务器网页查看</code>，给了写STM32代码到自闭的我一点小小的开源生态震撼。现在ESP32也算是国产网红芯片了，各种资料教程一大堆，想拿来干啥都有例程可以套。<br>
+       用Arduino IDE编写ESP32的mqtt代码的话我推荐用阿里云物联网服务器，因为有佬封装了<code>aliyun_mqtt</code>并在ESP8266测试，在Arduino管理库能直接下载<a target="_blank" rel="noopener" href="https://github.com/aoao-eth/arduino-aliyun-iot-sdk"><u>AliyunIoTSDK</u></a>使用。代码量非常小：</p>
+<pre class="highlight"><code class="cpp"><span class="hljs-comment">/*
+ * Includes
+ */</span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;WiFi.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;AliyunIoTSDK.h&gt;</span></span>
+
+<span class="hljs-comment">/*
+ * User Definition
+ */</span>
+<span class="hljs-comment">// WIFI</span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> WIFI_SSID     <span class="hljs-string">&quot;Your_WiFi_ID&quot;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> WIFI_PASSWD   <span class="hljs-string">&quot;Your_WiFi_Password&quot;</span></span>
+<span class="hljs-type">static</span> WiFiClient espClient;
+
+<span class="hljs-comment">// Aliyun-IoT</span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> PRODUCT_KEY   <span class="hljs-string">&quot;xxxxx&quot;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> DEVICE_NAME   <span class="hljs-string">&quot;NodeX&quot;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> DEVICE_SECRET <span class="hljs-string">&quot;xxxxx&quot;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> REGION_ID     <span class="hljs-string">&quot;cn-shanghai&quot;</span></span>
+
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+</span>&#123;
+    <span class="hljs-comment">// Setup</span>
+    WiFi.<span class="hljs-built_in">mode</span>(WIFI_STA);
+    WiFi.<span class="hljs-built_in">begin</span>(WIFI_SSID, WIFI_PASSWD);
+    <span class="hljs-keyword">while</span> (!WiFi.<span class="hljs-built_in">isConnected</span>())
+    &#123;
+        WiFi.<span class="hljs-built_in">begin</span>(WIFI_SSID, WIFI_PASSWD);
+    &#125;
+    AliyunIoTSDK::<span class="hljs-built_in">begin</span>(espClient, PRODUCT_KEY, DEVICE_NAME, DEVICE_SECRET, REGION_ID);
+&#125;
+
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>&#123;
+    <span class="hljs-comment">// Check WiFi</span>
+    <span class="hljs-keyword">while</span> (!WiFi.<span class="hljs-built_in">isConnected</span>())
+    &#123;
+        WiFi.<span class="hljs-built_in">begin</span>(WIFI_SSID, WIFI_PASSWD);
+    &#125;
+    
+    <span class="hljs-comment">// 甚至不需要topic设置就能发消息，只需要物理型标识符对应就彳亍。</span>
+    AliyunIoTSDK::<span class="hljs-built_in">send</span>((<span class="hljs-type">char</span>*)<span class="hljs-string">&quot;illuminationstdX&quot;</span>,temp.gy3Values.std_illumination);
+    
+    AliyunIoTSDK::<span class="hljs-built_in">loop</span>();
+&#125;
+
+</code></pre>
+<br>
+<h3 id="python-api"><a class="markdownIt-Anchor" href="#python-api"></a> Python API</h3>
+<p>       Python可以用的库就更多了，<a target="_blank" rel="noopener" href="https://github.com/eclipse/paho.mqtt.python"><u>paho-mqtt</u></a>、<code>aliyunlinkit</code>等等例程都很多。例如paho代码：</p>
+<pre class="highlight"><code class="python"><span class="hljs-comment"># Imports</span>
+
+<span class="hljs-comment">## std</span>
+<span class="hljs-keyword">import</span> json
+<span class="hljs-keyword">import</span> queue
+<span class="hljs-comment">## 3p</span>
+<span class="hljs-keyword">import</span> paho.mqtt.client <span class="hljs-keyword">as</span> mqtt
+
+
+<span class="hljs-comment"># MQTT Settings</span>
+PORT=<span class="hljs-number">1883</span>
+HOST=<span class="hljs-string">r&quot;iot-xxxxxxxxxxxx.mqtt.iothub.aliyuncs.com&quot;</span>
+DEV_ID = <span class="hljs-string">r&quot;xxxxxxxxxx.Desktop|securemode=2,signmethod=hmacsha256,timestamp=xxxxxxxxxxx|&quot;</span> 
+PRO_ID = <span class="hljs-string">r&quot;xxxxxxxxxx&quot;</span> 
+AUTH_INFO = <span class="hljs-string">r&quot;xxxxxxxxxxxxxxxxxxxxx&quot;</span>
+TOPIC = <span class="hljs-string">r&quot;/sys/xxxxxxxxxx/xxxxxxxxx/thing/service/property/set&quot;</span>
+
+
+<span class="hljs-comment"># MQTT Functions</span>
+
+<span class="hljs-comment">## The callback for when the client receives a CONNACK response from the server.</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">on_connect</span>(<span class="hljs-params">client, userdata, flags, rc</span>):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Connected with result code &quot;</span>+<span class="hljs-built_in">str</span>(rc))
+    <span class="hljs-comment"># Subscribing in on_connect() means that if we lose the connection and</span>
+    <span class="hljs-comment"># reconnect then subscriptions will be renewed.</span>
+    client.subscribe(TOPIC)
+
+<span class="hljs-comment">## The callback for when a PUBLISH message is received from the server.</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">on_message</span>(<span class="hljs-params">client, userdata, msg</span>):
+    <span class="hljs-comment">#print(msg.topic)</span>
+    <span class="hljs-built_in">str</span> = json.loads(msg.payload)
+    <span class="hljs-comment">#print(str)</span>
+    q_ali.put(<span class="hljs-built_in">str</span>)
+
+
+<span class="hljs-comment"># Main Function</span>
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:
+
+    <span class="hljs-comment">## message</span>
+    q_ali = queue.Queue()
+
+    <span class="hljs-comment">## Client Initialization</span>
+    client = mqtt.Client(DEV_ID)
+    
+    client.on_connect = on_connect
+    client.on_message = on_message
+    
+    client.username_pw_set(PRO_ID,AUTH_INFO)
+    client.connect(HOST, PORT, <span class="hljs-number">90</span>)
+    client.loop_start()
+
+    <span class="hljs-comment">## Loop</span>
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        <span class="hljs-keyword">pass</span>
+
+</code></pre>
+<br>
+<br>
 <h4 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h4>
-<p>       以上的物联网相关内容其实CSDN等网站上教程很多，这种资料很多的内容我肯定懒得写。但是由于网上资料过于细碎，我打通物联网通信的过程很不顺，所以还是写了些。<br>
+<p>       以上的物联网相关内容其实CSDN等网站上教程很多，但是过于细碎，我打通物联网通信的过程很不顺，所以就写了些方便以后找文档和快速回忆上手。<br>
 <br></p>
 
         <!-- 分类文章 -->
@@ -163,7 +297,7 @@
       <div class="post-content-inner-space">
         
           <div class="space-toc-main animate__animated  animate__fadeInUp">
-            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E5%8D%8F%E8%AE%AE%E7%AE%80%E4%BB%8B"><span class="space-toc-text"> 物联网协议简介</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E5%B9%B3%E5%8F%B0%E4%BB%8B%E7%BB%8D"><span class="space-toc-text"> 物联网平台介绍</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E8%AE%BE%E5%A4%87%E5%AE%9E%E4%BE%8B"><span class="space-toc-text"> 设备实例</span></a></li></ol>
+            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E5%8D%8F%E8%AE%AE"><span class="space-toc-text"> 物联网协议</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E5%B9%B3%E5%8F%B0"><span class="space-toc-text"> 物联网平台</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E8%AE%BE%E5%A4%87%E5%AE%9E%E4%BE%8B"><span class="space-toc-text"> 设备实例</span></a></li></ol>
            </div>
         
       </div>
