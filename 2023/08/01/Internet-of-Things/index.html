@@ -59,6 +59,12 @@
             </li>
           </a>
         
+          <a href="/tags" class="nav-link">
+            <li class="menu-li  animate__animated  animate__fadeInUp">
+              TAGS
+            </li>
+          </a>
+        
         
         
           <li class="menu-li animate__animated  animate__fadeInUp" id="mobile-menu">
@@ -95,6 +101,12 @@
     <a href="/archives" class="mobile-nav-link">
       <div class="mobile-menu-child animate__animated  animate__fadeInUp">
         <span>BLOG</span>
+      </div>
+    </a>
+  
+    <a href="/tags" class="mobile-nav-link">
+      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
+        <span>TAGS</span>
       </div>
     </a>
   
@@ -159,7 +171,11 @@
 <br></p>
 <h3 id="自建平台"><a class="markdownIt-Anchor" href="#自建平台"></a> 自建平台</h3>
 <p>       自己搭建物联网服务器的话，除了自己电脑，还可以用一些“派”甚至旧笔记本或小主机的主板，这样就可以放那全天运行。<br>
-<img src="/2023/08/01/Internet-of-Things/pi.jpg" alt="pi"></p>
+
+        <span class="lazyload-img-span">
+        <img data-src="pi.jpg">
+        
+      </span></p>
 <p>       左边<code>Z8350</code>4+64G才360元，右边<code>树莓派4b</code>8G学长友情价980给我（当时淘宝炒到1500😭），还有个4G版本我740元卖出去的（现在降到四百多了）。<br>
        说回搭服务器，最简单的方法就是Flask。搭好Python环境然后：</p>
 <pre class="highlight"><code class="bash">    pip install flask-mqtt
@@ -170,9 +186,17 @@
 <h2 id="设备实例"><a class="markdownIt-Anchor" href="#设备实例"></a> 设备实例</h2>
 <h3 id="mqttfx"><a class="markdownIt-Anchor" href="#mqttfx"></a> MQTT.fx</h3>
 <p>       MQTT.fx是一款基于Eclipse Paho，使用Java语言编写的MQTT客户端工具。支持通过Topic订阅和发布消息，用来前期和物理云平台调试非常方便。<a target="_blank" rel="noopener" href="http://mqttfx.jensd.de/index.php/download"><u>官网下载</u></a>安装后就可以开始用了。打开软件界面如下：<br>
-<img src="/2023/08/01/Internet-of-Things/fx.png" alt="fx"></p>
+
+        <span class="lazyload-img-span">
+        <img data-src="fx.png">
+        
+      </span></p>
 <p>       设置配置文件的界面：<br>
-<img src="/2023/08/01/Internet-of-Things/config.png" alt="config"></p>
+
+        <span class="lazyload-img-span">
+        <img data-src="config.png">
+        
+      </span></p>
 <p>       上手很简单就不细说了。<br>
 <br></p>
 <h3 id="esp32arduino-ide"><a class="markdownIt-Anchor" href="#esp32arduino-ide"></a> ESP32(Arduino IDE)</h3>
