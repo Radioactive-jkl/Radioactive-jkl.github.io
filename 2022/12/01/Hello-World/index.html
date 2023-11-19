@@ -160,13 +160,13 @@
 <br>
 <h2 id="内容划分"><a class="markdownIt-Anchor" href="#内容划分"></a> 内容划分</h2>
 <h3 id="标题"><a class="markdownIt-Anchor" href="#标题"></a> 标题</h3>
-<p>       markdown有<strong>六级标题</strong>， <code>#</code> 加一个空格后接标题内容即可。</p>
-<pre class="highlight"><code class>        #      一级标题
-        ##     二级标题
+<p>       markdown有<strong>六级标题</strong>， <code>#</code> 加一个空格后接标题内容即可。同时，在标题的文本下一行用三个及以上<code>=</code>也可以实现一级标题。</p>
+<pre class="highlight"><code class>        #      一级标题                一级标题
+        ##     二级标题                ========
         ###    三级标题
         ####   四级标题
-        #####  五级标题
-        ###### 六级标题
+        #####  五级标题                二级标题
+        ###### 六级标题                --------
 </code></pre>
 <br>
 <h3 id="列表"><a class="markdownIt-Anchor" href="#列表"></a> 列表</h3>
@@ -233,7 +233,7 @@
 <font color="#0099ff" size="7" face="STCAIYUN">Radioactive</font></p>
 <pre class="highlight"><code class>     &lt;font color=#0099ff size=7 face=&quot;STCAIYUN&quot;&gt;Radioactive&lt;/font&gt;
 </code></pre>
-<p>       支持HTML就能整很多活，<s>额反正md渲染的实质是html</s>。<br>
+<p>       支持HTML就能整很多活，<s>额反正md渲染的实质是html</s>，<code>&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;</code>等都能用。<br>
 <br></p>
 <h3 id="划线"><a class="markdownIt-Anchor" href="#划线"></a> 划线</h3>
 <p>       Markdown的<u>下划线</u>是在文字首部和尾部加上 <code>&lt;u&gt;</code> 与 <code>&lt;/u&gt;</code> ，在<s>需要删除的文字</s>前后各使用两个 <code>~</code>，格式如下：</p>
@@ -243,9 +243,10 @@
 <br>
 <h3 id="链接"><a class="markdownIt-Anchor" href="#链接"></a> 链接</h3>
 <p>       超链接的格式如下：</p>
-<pre class="highlight"><code class>    [链接名称](链接地址)
-    或者直接贴网址
-    &lt;链接地址&gt;
+<pre class="highlight"><code class>    [链接名称](链接地址) 或者直接贴网址 &lt;链接地址&gt;
+    
+    还可以在文中用[链接名称][1]
+    然后结尾处用[1]: 链接地址
 </code></pre>
 <br>
 <h3 id="表格"><a class="markdownIt-Anchor" href="#表格"></a> 表格</h3>
@@ -277,11 +278,13 @@
 </code></pre>
 <br>
 <h3 id="图片"><a class="markdownIt-Anchor" href="#图片"></a> 图片</h3>
-<p>       插入图片格式为 <code>[图片描述](图片地址)</code> ，支持 jpg、png、gif、svg 等图片格式，但仅支持 https 的图片，图片粘贴到网页编辑器后，会自动上传到服务器；如果是本地编辑器，需要有一个相对路径用来存储保存的图片。<br>
+<p>       插入图片格式为 <code>![图片描述](图片地址 &quot;可选标题&quot;)</code> ，支持 jpg、png、gif、svg 等图片格式，但仅支持 https 的图片，图片粘贴到网页编辑器后，会自动上传到服务器；如果是本地编辑器，需要有一个相对路径用来存储保存的图片。<br>
 <br></p>
 <h3 id="脚注"><a class="markdownIt-Anchor" href="#脚注"></a> 脚注</h3>
-<p>       脚注是对文本的<a href="%E8%84%9A%E6%B3%A8%E8%A7%A3%E9%87%8A" title="脚注名称">备注说明</a>。</p>
-<pre class="highlight"><code class>    [文字](这里写解释 &quot;这里写名称&quot;)
+<p>       脚注是对文本的备注说明<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</p>
+<pre class="highlight"><code class>    创建脚注格式类似这样 [^文字]
+
+    [^文字]: 一些说明
 </code></pre>
 <br>
 <h3 id="代码块"><a class="markdownIt-Anchor" href="#代码块"></a> 代码块</h3>
@@ -332,7 +335,7 @@ $$
     复杂分式     分子 \over 分母
 </code></pre>
 <br>
-<h3 id="部分公式"><a class="markdownIt-Anchor" href="#部分公式"></a> 部分公式</h3>
+<h3 id="部分常用公式"><a class="markdownIt-Anchor" href="#部分常用公式"></a> 部分常用公式</h3>
 <p>       积分式：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∫</mo><mrow><mn>0</mn></mrow><mrow><mn>1</mn></mrow></msubsup><mrow><msup><mi>x</mi><mrow><mn>3</mn></mrow></msup></mrow><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{1} {x^{3}}dx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.870108em;"></span><span class="strut bottom" style="height:1.2262279999999999em;vertical-align:-0.35612em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∫</span><span class="vlist"><span style="top:0.35612em;margin-left:-0.19445em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathrm">0</span></span></span></span><span style="top:-0.41900000000000004em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">3</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord mathit">d</span><span class="mord mathit">x</span></span></span></span></p>
 <pre class="highlight"><code class>    \int_&#123;积分上限&#125;^&#123;积分上限&#125; &#123;被积表达式&#125;
 </code></pre>
@@ -382,6 +385,39 @@ $$
     ···
     \end&#123;matrix&#125;
     \right]
+
+</code></pre>
+<br>
+<h3 id="流程图"><a class="markdownIt-Anchor" href="#流程图"></a> 流程图</h3>
+<p>       若有<kbd>KaTeX</kbd>插件，那就能绘制流程图：</p>
+\begin{CD}
+   A @>a>> B \\
+@VbVV @AAcA \\
+   C @= D
+\end{CD}
+
+<pre class="highlight"><code class>$$
+\begin&#123;CD&#125;
+   A @&gt;a&gt;&gt; B \\
+@VbVV @AAcA \\
+   C @= D
+\end&#123;CD&#125;
+$$
+
+</code></pre>
+<p>       横向流程图源码格式：<br>
+graph LR<br>
+A[方形] --&gt;B(圆角)<br>
+B --&gt; C{条件a}<br>
+C --&gt;|a=1| D[结果1]<br>
+C --&gt;|a=2| E[结果2]<br>
+F[横向流程图]</p>
+<pre class="highlight"><code class="mermaid">graph LR
+A[方形] --&gt;B(圆角)
+    B --&gt; C&#123;条件a&#125;
+    C --&gt;|a=1| D[结果1]
+    C --&gt;|a=2| E[结果2]
+    F[横向流程图]
 
 </code></pre>
 <br>
@@ -821,8 +857,14 @@ $$
 </tr>
 </tbody>
 </table>
-<h4 id="写完人累麻了br就当熟练一遍markdown了"><a class="markdownIt-Anchor" href="#写完人累麻了br就当熟练一遍markdown了"></a> 写完人累麻了,<br>就当熟练一遍markdown了。</h4>
-<br>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>写完人累麻了,<br>就当熟练一遍markdown了。<br>
+<br> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
         <!-- 分类文章 -->
         
